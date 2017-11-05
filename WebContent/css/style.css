@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+.barreBleue{
+height:30px;
+margin-top:0px;
+background-color:#0D5292;
+text-align: right;
+color: #ffffff;
+padding-top: 6px;
+}
+
+.header{
+height:100px;
+margin-top:2px;
+background-color:#0D5292;
+padding-left: 0px;
+}
+
+
+.blocContenu{
+min-height:530px;
+margin-top:2px;
+background-color:#000000;
+
+}
+
+
+.menu{
+height:530px;
+background-color:#000000;
+color: #ffffff;	
+}
+
+.contenu{
+min-height:530px;
+margin-right: -15px;
+float: right;
+background-color:#a19a9a;
+
+}
+
+
+a{
+	color:#888a85;
+}
