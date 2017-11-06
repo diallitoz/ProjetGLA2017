@@ -5,6 +5,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.NumberFormat;
+import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -68,8 +70,23 @@ public class ControleurServlet extends HttpServlet {
 			// Les "%" c'est pour signifier tt ce qui vient avant et apres le
 			// mot cle
 			modeleCpte.setListeCompteRecherche(listeCompteRecherche);
+			
 			request.setAttribute("modeleCpte", modeleCpte);
 			request.getRequestDispatcher("VueCompte.jsp").forward(request, response);
+		} 
+		
+		else if (path.equals("/ConsulterCompte.php")) {
+			Long idClient = Long.parseLong(request.getParameter("idClient"));
+			CompteModele modeleCpte = new CompteModele();
+			modeleCpte.setIdClient(idClient);
+			Compte compte = metier.consulterCompte(idClient);
+			modeleCpte.setCompte(compte);
+			//request.setAttribute("modeleCpte", modeleCpte);
+			request.setAttribute("compte", compte);
+			NumberFormat numberFormat = NumberFormat.getInstance(java.util.Locale.ENGLISH);
+			request.setAttribute("soldeString", numberFormat.format(compte.getSolde())); 
+			request.setAttribute("date", new Date());
+			request.getRequestDispatcher("ConsulterCompte.jsp").forward(request, response);
 		} 
 		
 		else if (path.equals("/CreerCompte.php")) {
@@ -130,6 +147,38 @@ public class ControleurServlet extends HttpServlet {
 
 		}
 
+		else if (path.equals("/DebiterCompte.php")) {
+
+			Long id = Long.parseLong(request.getParameter("id"));
+			Compte cpte = metier.getCompte(id);
+			request.setAttribute("compte", cpte);
+			request.setAttribute("date", new Date());
+			request.getRequestDispatcher("DebiterCompte.jsp").forward(request, response);
+			// response.sendRedirect("chercher.php?motCle=");// Redirection vers
+			// une autre page...
+
+		}
+
+		else if (path.equals("/VersementCompte.php") && request.getMethod().equals("POST")) {
+			
+			//String date = request.getParameter("date");
+			Long id = Long.parseLong(request.getParameter("id"));
+			
+			Double montant = Double.parseDouble(request.getParameter("montant"));
+
+			Compte cpte = new Compte();
+
+			cpte.setId(id);
+			//cpte.setId(solde);
+			cpte = metier.debiterCompte(cpte.getId(),montant, new Date());
+
+			request.setAttribute("compte", cpte);
+			request.setAttribute("montant", montant);
+			request.setAttribute("date", new Date());
+			request.getRequestDispatcher("ConfirmationVersement.jsp").forward(request, response);
+
+		}
+		
 		
 		//Operations sur l'entite CLIENT a travers l'objet METIER2
 		
@@ -387,29 +436,7 @@ public class ControleurServlet extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 				 response.sendRedirect("index.jsp");
-			} /*finally {
-				if (connexion != null) {
-					try {
-						connexion.close();
-					} catch (SQLException e) {
-						e.printStackTrace();
-					}
-				}
-				if (ps != null) {
-					try {
-						ps.close();
-					} catch (SQLException e) {
-						e.printStackTrace();
-					}
-				}
-				if (rs != null) {
-					try {
-						rs.close();
-					} catch (SQLException e) {
-						e.printStackTrace();
-					}
-				}
-			}*/
+			} 
 			
 
 		}

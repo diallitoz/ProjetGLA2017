@@ -21,6 +21,6 @@
 </div>
 
 <div  class=" barreBleue container col-md-10 col-md-offset-1  col-xs-12">
-Bienvenue <%=login%> &nbsp;&nbsp; &nbsp;	&nbsp;<a href="index.jsp">logout</a></div>
+Bienvenue <%=login%> &nbsp;&nbsp; &nbsp;	&nbsp;<a href="index.jsp"><font color="white">logout</font></a></div>
  
 </header>

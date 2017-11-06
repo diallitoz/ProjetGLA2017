@@ -19,25 +19,31 @@
 
  <%@include file="include/header.jsp"%>
  
- <div  class=" blocContenu container col-md-10 col-md-offset-1  col-xs-12">
+ <div  class=" blocContenu container col-md-12 col-md-offset-0  col-xs-12">
 	
-<div  class=" menu container col-md-3  col-xs-3"><!-- Menu Administrateur -->
+<%-- <div  class=" menu container col-md-2  col-xs-3"><!-- Menu Administrateur -->
 
 <%@include file="include/menuAdministrateur.jsp"%>
-</div>
+</div> --%>
 
 
-<div  class=" contenu container col-md-9  col-xs-7">
+<!-- <div  class=" contenu container col-md-10  col-xs-7"> -->
 
 <div class=" panel panel-primary">
 
-			<div class=" panel-heading">Recherche des clients</div>
+			<div class=" panel-heading">Recherche des clients </div>
+			 
 			<div class=" panel-body">
 
 				<form action="ChercherClient.php" method="get">
 					<label for="motCle">Mot cle </label> 
 					<input type="search" name="motCle" id="motCle" value="${modeleCpte.motCle}" />
-					<button type="submit" class="btn btn-primary">ReChercher</button>
+					<button type="submit" class="btn btn-primary">Rechercher</button>
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					
+					<a href="Administration.jsp"><font size="3" face="georgia" color="red">RETOUR</font></a>
 
 				</form>
 				<table class="table table-striped">
@@ -85,7 +91,7 @@
 			</div>
 
 		</div>
-</div>
+<!-- </div> -->
 
 </div>
  

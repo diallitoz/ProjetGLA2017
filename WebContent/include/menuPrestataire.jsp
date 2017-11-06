@@ -1,5 +1,5 @@
 <ul class="nav nav-pills nav-stacked ">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation" class="active"><a href="Prestataire.jsp">Home</a></li>
   
  <!-- ----------------------------------------------------------------------------------------------- -->
   <!--  partie de Prestataire -->
@@ -11,7 +11,7 @@
           
              <li role="separator" class="divider"></li>
              	
-	             <li><a href="#">Consulter solde</a></li>
+	             <li><a href="ConsulterCompte.jsp">Consulter solde</a></li>
 	             <li><a href="#">Effectuer un payement</a></li>
 	             <li><a href="#">Historiques</a></li>     
 	         

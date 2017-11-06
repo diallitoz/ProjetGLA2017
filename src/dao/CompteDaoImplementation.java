@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import metier.entities.Compte;
@@ -92,8 +93,27 @@ public class CompteDaoImplementation implements ICompteDao {
 
 	@Override
 	public Compte consulterCompte(Long id) {
-		// TODO Auto-generated method stub
-		return null;
+		Compte compte = new Compte();
+		Connection connexion = SingletonConnexion.getConnexion();
+		try {
+			PreparedStatement ps = connexion.prepareStatement("SELECT * FROM COMPTE WHERE ID_COMPTE LIKE ?");
+
+			ps.setLong(1, id);
+			ResultSet resultat = ps.executeQuery();
+			if (resultat.next()) {
+				compte.setId(resultat.getLong("ID_COMPTE"));
+				compte.setType(resultat.getString("TYPE"));
+				compte.setDateCreation(resultat.getString("DATE_CREATION"));
+				compte.setIdClient(resultat.getLong("ID_CLIENT"));
+				compte.setIdGestionnaire(resultat.getLong("ID_GESTIONNAIRE"));
+				compte.setSolde(resultat.getDouble("SOLDE"));
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return compte;
 	}
 
 	@Override
@@ -134,8 +154,27 @@ public class CompteDaoImplementation implements ICompteDao {
 	}
 
 	@Override
-	public void debiterCompte(Long id) {
+	public Compte debiterCompte(Long id, double montant, Date date) {
+		
+		Compte cpte = getCompte(id);
+		date = new Date();
+		cpte.setSolde(cpte.getSolde() + montant);
 		// TODO Auto-generated method stub
+		
+		Connection connexion = SingletonConnexion.getConnexion();
+		try {
+			PreparedStatement ps = connexion.prepareStatement("UPDATE COMPTE SET SOLDE=? WHERE ID_COMPTE=?");
+			ps.setDouble(1, cpte.getSolde());
+			ps.setLong(2, cpte.getId());
+			ps.executeUpdate();
+			ps.close();
+			// connexion.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return cpte;
 
 	}
 

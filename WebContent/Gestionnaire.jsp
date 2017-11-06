@@ -21,13 +21,16 @@
  
  <div  class=" blocContenu container col-md-10 col-md-offset-1  col-xs-12">
 	
-<div  class=" menu container col-md-3  col-xs-3"><!-- Menu Gestionnaire -->
+<div  class=" menu container col-md-2  col-xs-3"><!-- Menu Gestionnaire -->
 
 <%@include file="include/menuGestionnaire.jsp"%>
 </div>
 
 
-<div  class=" contenu container col-md-9  col-xs-7">Contenu</div>
+<div style="background-color:white"  class=" contenu container col-md-10  col-xs-7">
+<img alt="Globe terreste" src="image/Global3.jpg" align="right" >
+<!-- width="100px" height="120px" align="right" -->
+</div>
 
 </div>
  

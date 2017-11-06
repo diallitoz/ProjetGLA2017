@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Confirmation creation compte</title>
+<title>Confirmation versement</title>
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css"
@@ -23,7 +23,7 @@
 	
 <div  class=" menu container col-md-2  col-xs-3"><!-- Menu Administrateur -->
 
-<%@include file="include/menuGestionnaire.jsp"%>
+<%@include file="include/menuAdministrateur.jsp"%>
 </div>
 
 
@@ -31,19 +31,10 @@
 
 <div class=" panel panel-primary">
 
-			<div class=" panel-heading">Confirmation de creation du Compte
-				client</div>
+			<div class=" panel-heading">Confirmation de versement d'argent</div>
 			<div class=" panel-body">
 				<div class="form-group">
 					<label> ID COMPTE :  </label> <label> ${compte.id}</label>
-				</div>
-
-				<div class="form-group">
-					<label> Type :  </label> <label> ${compte.type}</label>
-				</div>
-
-				<div class="form-group">
-					<label> Date de creation :  </label> <label> ${compte.dateCreation}</label>
 				</div>
 
 				<div class="form-group">
@@ -51,12 +42,20 @@
 				</div>
 
 				<div class="form-group">
-					<label> Id Gestionnaire :  </label> <label>
+					<label> Date de versement :  </label> <label> ${date}</label>
+				</div>
+
+				<div class="form-group">
+					<label> Montant verse :  </label> <label> ${montant}</label> VND
+				</div>
+
+				<div class="form-group">
+					<label> Effectue par le Gestionnaire :  </label> <label>
 						${compte.idGestionnaire}</label>
 				</div>
 
 				<div class="form-group">
-					<label> Solde :  </label> <label> ${compte.solde}</label> VND
+					<label> Nouveau Solde :  </label> <label> ${compte.solde}</label> VND
 
 				</div>
 			</div>

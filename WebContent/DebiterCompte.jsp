@@ -29,42 +29,33 @@
 
 <div  class=" contenu container col-md-10  col-xs-7">
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 <div class=" panel panel-primary">
 
-			<div class=" panel-heading">Creer un nouveau compte client</div>
+			<div class=" panel-heading">Versement d'argent dans un compte</div>
 			<div class=" panel-body">
-				<form action="EnregistrerCompte.php" method="post">
+				<form action="VersementCompte.php" method="post">
 					<div class="form-group">
-						<label for="type" class=" control-label "> Type de compte* </label> 
-						<%-- <input type="text" name="type" id="type" class="form-control" value = "${compte.type }" required = "required" /> <span></span> --%>
+						<label class=" control-label "> Date de versement : </label> &nbsp;&nbsp;&nbsp;
+						<input type="hidden" name="dateVersement" class="form-control" value = "${date}" required = "required" /> <span></span>
+						<label class=" control-label "> ${date} </label> 
+					</div>
 					
-						&nbsp;
-						&nbsp;
-						<input type="radio" name="type" value="Prestataire" id="Prestataire" required = "required" /> <label for="Prestataire">Prestataire</label>
-						
-						&nbsp;
-						&nbsp;
-						<input type="radio" name="type" value="Etudiant" id="Etudiant" required = "required" /> <label for="Etudiant">Etudiant</label>
-					</div>
 					<div class="form-group">
-						<label class=" control-label "> Date* </label> <input type="date"
-							name="date" class="form-control" value = "${compte.dateCreation }" required = "required"/> <span></span>
+						<label for="id" class=" control-label "> Numero Compte du benificiaire : </label> &nbsp;&nbsp;&nbsp;
+						<input type="hidden" name="id" id="id" class="form-control" value = "${compte.id }" required = "required" /> <span></span>
+						<label class=" control-label "> ${compte.id} </label> 
 					</div>
+					
 					<div class="form-group">
-						<label class=" control-label "> Id Client* </label> 
-						<input type="text" name="idClient" class="form-control" value = "${compte.idClient }" required = "required"/> <span></span>
+						<label for="montnat" class=" control-label "> Montant a verser* : </label>
+						<input type="text" name="montant" id="montant" class="form-control" placeholder = "Veuiller saisir le montant VND" required = "required" style="width:300px;"/><span></span>
+						<!-- <label class=" control-label "> VND </label>  -->
 					</div>
-					<div class="form-group">
-						<label class=" control-label "> Id Gestionnaire* </label> <input
-							type="text" name="idGestionnaire" class="form-control" value = "${compte.idGestionnaire }" required = "required"/> <span></span>
-					</div>
-					<div class="form-group">
-						<label class=" control-label "> Solde* </label> <input type="text"
-							name="solde" class="form-control" value = "${compte.solde }" required = "required" /> <span></span>
-					</div>
-
+				
 					<div>
-						<button type="submit" class="btn btn-primary">Creer</button>
+						<button type="submit" class="btn btn-primary">Debiter</button>
 						
 						<button type="reset" class="btn btn-primary">Renitialiser</button>
 

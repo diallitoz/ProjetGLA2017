@@ -38,13 +38,6 @@
            <!--   <li role="separator" class="divider"></li> -->
 	             <li><a href="CreerNouveauCompte.jsp">Nouveau Compte</a></li>
 	             <li><a href="VueCompte.jsp">Operations Compte</a></li>
-	             
-	        <!--  <li role="separator" class="divider"></li>
-             	<li><a href="#" style="color:red">Gestion Operation</a></li>
-             <li role="separator" class="divider"></li>
-	             <li><a href="#">Liste Compte</a></li>
-	             <li><a href="#">Editer Compte</a></li>
-	             <li><a href="#">Supprimer Compte</a></li> -->
           </ul>
         </li>
   <!-- ----------------------------------------------------------------------------------------------- -->
@@ -57,7 +50,7 @@
           
              <li role="separator" class="divider"></li>
              	
-	             <li><a href="#">Consulter solde</a></li>
+	             <li><a href="ConsulterCompte.jsp">Consulter solde</a></li>
 	             <li><a href="#">Effectuer un payement</a></li>
 	             <li><a href="#">Historiques</a></li>     
 	         
@@ -74,7 +67,7 @@
           
              <li role="separator" class="divider"></li>
              	
-	             <li><a href="#">Consulter solde</a></li>
+	             <li><a href="ConsulterCompte.jsp">Consulter solde</a></li>
 	             <li><a href="#">Effectuer un payement</a></li>
 	             <li><a href="#">S'abonner</a></li>
 	             <li><a href="#">Mes abonnments</a></li>

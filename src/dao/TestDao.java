@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.NumberFormat;
+import java.util.Date;
 import java.util.List;
 
 import metier.entities.Client;
@@ -14,8 +16,8 @@ public class TestDao {
 
 	public static void main(String[] args) {
 		CompteDaoImplementation dao = new CompteDaoImplementation();
-		/*Compte cpte1 = dao.enregistrerCompte(new Compte("Etudiant", "2017.10.27", 1, 5, 1000000.0));
-		Compte cpte2 = dao.enregistrerCompte(new Compte("Etudiant", "2017.10.27", 2, 15, 1000000.0));
+		Compte cpte1 = dao.enregistrerCompte(new Compte("Prestataire", "2017.11.05", 5, 2, 100000.0));
+		/*Compte cpte2 = dao.enregistrerCompte(new Compte("Etudiant", "2017.10.27", 2, 15, 1000000.0));
 		Compte cpte3 = dao.enregistrerCompte(new Compte("Prestataire", "2017.10.27", 3, 1, 1000000.0));
 		System.out.println(cpte1.toString());
 		System.out.println(cpte2.toString());
@@ -25,6 +27,18 @@ public class TestDao {
 		for(Compte cpte : listCompteRecherche){
 			System.out.println(cpte.toString());
 		}*/
+		
+		System.out.println(cpte1.toString());
+		
+		cpte1 = dao.debiterCompte(cpte1.getId(), 1000000.0, "");
+		
+		System.out.println(cpte1.toString());
+		
+		/*NumberFormat numberFormat = NumberFormat.getInstance(java.util.Locale.FRENCH);
+		
+		Compte cpte = dao.consulterCompte((long)39);
+		System.out.println(cpte.getIdClient());
+		System.out.println(numberFormat.format(cpte.getSolde()));*/
 		
 		/*ClientDaoImplementation dao1 = new ClientDaoImplementation();
 		Client client1 = dao1.enregistrerClient(new Client("M", "DIALLO","Azise", "1988.09.11", "Bobo", "M", "Etudiant","Passport","A111 du 11 Sep 2015","ky tuc xa My dinh","01665853416","diallo.p21@ifi.edu.vn"));
@@ -58,8 +72,8 @@ public class TestDao {
 				
 				UtilisateurDaoImplementation dao3 = new UtilisateurDaoImplementation();
 				
-				Utilisateur user1 = dao3.enregistrerUtilisateur(new Utilisateur("Administrateur", "popo", "popo","popo@gmail.com", false));
-				System.out.println(user1.toString());
+				/*Utilisateur user1 = dao3.enregistrerUtilisateur(new Utilisateur("Administrateur", "popo", "popo","popo@gmail.com", false));
+				System.out.println(user1.toString());*/
 				/*Utilisateur user2 = dao3.enregistrerUtilisateur(new Utilisateur("Etudiant", "moto", "moto","moto@gmail.com", true));
 				Utilisateur user3 = dao3.enregistrerUtilisateur(new Utilisateur("Prestataire", "pata", "pata","pata@gmail.com", false));
 				
@@ -75,7 +89,8 @@ public class TestDao {
 				for(Utilisateur user : listUserRecherche){
 					System.out.println(user.toString());
 				}*/
-	
+				
+				
 				
 				
 	}

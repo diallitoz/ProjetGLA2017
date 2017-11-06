@@ -31,7 +31,12 @@
 </div>
 
 
-<div  class=" contenu container col-md-10  col-xs-7">Contenu</div>
+<div style="background-color:white"  class=" contenu container col-md-10  col-xs-7">
+<!-- <img alt="Globe terreste" src="image/Global3.jpg" align="right" > -->
+<img alt="OnlineShopping" src="image/OnlineShopping.jpg" width="800px" height="500px" align="left" >
+<!-- width="100px" height="120px" align="right" -->
+
+</div>
 
 </div>
  

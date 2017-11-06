@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Administration</title>
+<title>Page de connexion</title>
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css"
@@ -62,6 +62,9 @@
 			</div>
 
 		</div>
+
+<img alt="Globe terreste" src="image/Global3.jpg" align="right" >
+
 
  
  <%@include file="include/footer.jsp"%>

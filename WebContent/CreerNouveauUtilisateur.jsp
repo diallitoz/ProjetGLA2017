@@ -21,12 +21,12 @@
  
  <div  class=" blocContenu container col-md-10 col-md-offset-1  col-xs-12">
 	
-<div  class=" menu container col-md-3  col-xs-3"><!-- Menu Administrateur -->
+<div  class=" menu container col-md-2  col-xs-3"><!-- Menu Administrateur -->
 
 <%@include file="include/menuAdministrateur.jsp"%>
 </div>
 
-<div  class=" contenu container col-md-9  col-xs-7">
+<div  class=" contenu container col-md-10  col-xs-7">
 <div class=" panel panel-primary">
 
 			<div class=" panel-heading">Creer un nouveau utilisateur</div>

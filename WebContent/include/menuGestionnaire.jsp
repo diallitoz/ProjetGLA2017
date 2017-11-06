@@ -1,5 +1,5 @@
 <ul class="nav nav-pills nav-stacked ">
-  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation" class="active"><a href="Gestionnaire.jsp">Home</a></li>
   
 <!--  partie de gestionnaire -->
   
@@ -9,27 +9,21 @@
           
              <li role="separator" class="divider"></li>
              	<li><a href="#" style="color:red">Gestion Client</a></li>
-	             <li><a href="#">Nouveau Client</a></li>
-	             <li><a href="#">Liste Client</a></li>
-	             <li><a href="#">Editer Client</a></li>
-	             <li><a href="#">Supprimer Client</a></li>
+	             <li><a href="CreerNouveauClient.jsp">Nouveau Client</a></li>
+	             <li><a href="VueClient.jsp">Operations Client</a></li>
+	             
 	             
 	         <li role="separator" class="divider"></li>
              	<li><a href="#" style="color:red">Gestion Compte</a></li>
            <!--   <li role="separator" class="divider"></li> -->
-	             <li><a href="#">Nouveau Compte</a></li>
-	             <li><a href="#">Liste Compte</a></li>
-	             <li><a href="#">Editer Compte</a></li>
-	             <li><a href="#">Supprimer Compte</a></li>
-	             
+	             <li><a href="CreerNouveauCompte.jsp">Nouveau Compte</a></li>
+	             <li><a href="VueCompte.jsp">Operations Compte</a></li>
 	         <li role="separator" class="divider"></li>
-             	<li><a href="#" style="color:red">Gestion Operation</a></li>
-             <!-- <li role="separator" class="divider"></li> -->
-	             <li><a href="#">Liste Compte</a></li>
-	             <li><a href="#">Editer Compte</a></li>
-	             <li><a href="#">Supprimer Compte</a></li>
+	          
+	             
           </ul>
         </li>
+	         
   
    <!-- ----------------------------------------------------------------------------------------------- -->
   <!--  partie de Personnaliser -->

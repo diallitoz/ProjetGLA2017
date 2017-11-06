@@ -14,6 +14,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     Ionicons
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+
+	<style type="text/css">
+    	th, td{
+    		text-align: center;
+    	}
+    </style>
+
 </head>
 <body>
 
@@ -21,13 +28,13 @@
  
  <div  class=" blocContenu container col-md-10 col-md-offset-1  col-xs-12">
 	
-<div  class=" menu container col-md-3  col-xs-3"><!-- Menu Administrateur -->
+<div  class=" menu container col-md-2  col-xs-3"><!-- Menu Administrateur -->
 
-<%@include file="include/menuAdministrateur.jsp"%>
+<%@include file="include/menuGestionnaire.jsp"%>
 </div>
 
 
-<div  class=" contenu container col-md-9  col-xs-7">
+<div  class=" contenu container col-md-10  col-xs-7">
 
 <div class=" panel panel-primary">
 
@@ -40,7 +47,10 @@
 					<button type="submit" class="btn btn-primary">ReChercher</button>
 
 				</form>
-				<table class="table table-striped">
+				<br>
+				<br>
+			
+				<table style="border:1px" class="table table-striped" >
 					<tr>
 						<th>ID</th>
 						<th>TYPE</th>
@@ -50,6 +60,7 @@
 						<th>SOLDE</th>
 						<th>MODIFICATION</th>
 						<th>SUPPRESSION</th>
+						<th>VERSEMENT</th>
 					</tr>
 					<c:forEach items="${modeleCpte.listeCompteRecherche}" var="cpte">
 						<tr>
@@ -62,6 +73,7 @@
 							<td>${cpte.solde}</td>
 							<td><a href="ModifierCompte.php?id=${cpte.id }"> Modifier </a></td>
 							<td><a onclick = "return confirm ('Voulez vous vraiment suppprimer ce compte')" href="SupprimerCompte.php?id=${cpte.id }"> Supprimer </a></td>
+							<td><a href="DebiterCompte.php?id=${cpte.id }"> Debiter </a></td>
 						</tr>
 
 					</c:forEach>
