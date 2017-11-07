@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Administration</title>
+<title>Operations sur les comptes</title>
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css"
@@ -38,13 +38,13 @@
 
 <div class=" panel panel-primary">
 
-			<div class=" panel-heading">Recherche de comptes client</div>
+			<div class=" panel-heading">Operations de comptes client</div>
 			<div class=" panel-body">
 
-				<form action="ChercherCompte.php" method="get">
-					<label>Mot cle </label> 
-					<input type="search" name="motCle" id="motCle"	value="${modeleCpte.motCle}" />
-					<button type="submit" class="btn btn-primary">ReChercher</button>
+				<form action="OperationCompte.php" method="get">
+					<label for="id">Numero de compte </label> 
+					<input type="number" name="id" id="id"	value="${cpte.id}" min="1" required = "required"/>
+					<button type="submit" class="btn btn-primary">Appliquer</button>
 
 				</form>
 				<br>
@@ -62,7 +62,7 @@
 						<th>SUPPRESSION</th>
 						<th>VERSEMENT</th>
 					</tr>
-					<c:forEach items="${modeleCpte.listeCompteRecherche}" var="cpte">
+					<%-- <c:forEach items="${modeleCpte.listeCompteRecherche}" var="cpte"> --%>
 						<tr>
 
 							<td>${cpte.id}</td>
@@ -70,13 +70,13 @@
 							<td>${cpte.dateCreation}</td>
 							<td>${cpte.idClient }</td>
 							<td>${cpte.idGestionnaire }</td>
-							<td>${cpte.solde}</td>
+							<td>${soldeString} VND</td>
 							<td><a href="ModifierCompte.php?id=${cpte.id }"> Modifier </a></td>
 							<td><a onclick = "return confirm ('Voulez vous vraiment suppprimer ce compte')" href="SupprimerCompte.php?id=${cpte.id }"> Supprimer </a></td>
 							<td><a href="DebiterCompte.php?id=${cpte.id }"> Debiter </a></td>
 						</tr>
 
-					</c:forEach>
+					<%-- </c:forEach> --%>
 				</table>
 			</div>
 

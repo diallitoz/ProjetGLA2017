@@ -68,8 +68,15 @@
 					</div>
 					
 					<div class="form-group">
-						<label for="status" class=" control-label "> Status* </label> 
-						<input type="text"	name="solde" id="status" class="form-control" value = "${user.status }" required = "required" /> <span></span>
+					
+					<label for="civilite" class=" control-label "> Status* </label> 
+						&nbsp;
+						&nbsp;
+						<input type="radio" name="status" value="Active" id="Active" required = "required" /> <label for="Active">Active</label>
+						&nbsp;
+						&nbsp;
+						<input type="radio" name="status" value="Non active" id="Non active" required = "required" /> <label for="Non active">Non active</label>
+						
 					</div>
 
 					<div>

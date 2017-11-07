@@ -1,6 +1,7 @@
 package metier.entities;
 
 import java.io.Serializable;
+import java.util.Date;
 
 
 public class Operations implements Serializable {
@@ -8,7 +9,7 @@ public class Operations implements Serializable {
 	private Long id;
 	private String dateOperation;
 	private double montant;
-	private Compte compte;
+	private long idCompte;
 	
 	
 	public Operations() {
@@ -18,11 +19,11 @@ public class Operations implements Serializable {
 
 
 
-	public Operations(String dateOperation, double montant, Compte compte) {
+	public Operations(String dateOperation, double montant, long idCompte) {
 		super();
 		this.dateOperation = dateOperation;
 		this.montant = montant;
-		this.compte = compte;
+		this.idCompte = idCompte;
 	}
 
 
@@ -63,14 +64,14 @@ public class Operations implements Serializable {
 
 
 
-	public Compte getCompte() {
-		return compte;
+	public Long getIdCompte() {
+		return idCompte;
 	}
 
 
 
-	public void setCompte(Compte compte) {
-		this.compte = compte;
+	public void setIdCompte(Long idCompte) {
+		this.idCompte = idCompte;
 	}
 	
 

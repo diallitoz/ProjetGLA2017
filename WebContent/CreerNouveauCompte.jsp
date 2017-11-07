@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Administration</title>
+<title>Creation d'un nouveau compte</title>
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css"
@@ -23,7 +23,7 @@
 	
 <div  class=" menu container col-md-2  col-xs-3"><!-- Menu Administrateur -->
 
-<%@include file="include/menuAdministrateur.jsp"%>
+<%@include file="include/menuGestionnaire.jsp"%>
 </div>
 
 

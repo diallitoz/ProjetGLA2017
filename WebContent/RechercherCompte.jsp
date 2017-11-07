@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Operations sur les utilisateurs</title>
+<title>Recherche de compte</title>
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css"
@@ -14,6 +14,13 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     Ionicons
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+
+	<style type="text/css">
+    	th, td{
+    		text-align: center;
+    	}
+    </style>
+
 </head>
 <body>
 
@@ -23,7 +30,7 @@
 	
 <div  class=" menu container col-md-2  col-xs-3"><!-- Menu Administrateur -->
 
-<%@include file="include/menuAdministrateur.jsp"%>
+<%@include file="include/menuGestionnaire.jsp"%>
 </div>
 
 
@@ -31,37 +38,42 @@
 
 <div class=" panel panel-primary">
 
-			<div class=" panel-heading">Recherche des utilisateurs</div>
+			<div class=" panel-heading">Recherche de comptes client</div>
 			<div class=" panel-body">
 
-				<form action="ChercherUtilisateur.php" method="get">
+				<form action="ChercherCompte.php" method="get">
 					<label>Mot cle </label> 
-					<input type="search" name="motCle" id="motCle"	value="${modeleUser.motCle}" />
-					<button type="submit" class="btn btn-primary">Rechercher</button>
+					<input type="search" name="motCle" id="motCle"	value="${modeleCpte.motCle}" />
+					<button type="submit" class="btn btn-primary">ReChercher</button>
 
 				</form>
-				<table class="table table-striped">
+				<br>
+				<br>
+			
+				<table style="border:1px" class="table table-striped" >
 					<tr>
 						<th>ID</th>
-						<th>PROFIL</th>
-						<th>LOGIN</th>
-						<th>PASSWORD</th>
-						<th>EMAIL</th>
-						<th>STATUS</th>
+						<th>TYPE</th>
+						<th>DATE DE CREATION</th>
+						<th>ID CLIENT</th>
+						<th>ID GESTIONNAIRE</th>
+						<th>SOLDE</th>
 						<th>MODIFICATION</th>
 						<th>SUPPRESSION</th>
+						<th>VERSEMENT</th>
 					</tr>
-					<c:forEach items="${modeleUser.listeUtilisateurRecherche}" var="user">
+					<c:forEach items="${modeleCpte.listeCompteRecherche}" var="cpte">
 						<tr>
 
-							<td>${user.id}</td>
-							<td>${user.profil}</td>
-							<td>${user.login}</td>
-							<td>${user.password }</td>
-							<td>${user.email}</td>
-							<td>${user.status}</td>
-							<td><a href="ModifierUtilisateur.php?id=${user.id}"> Modifier </a></td>
-							<td><a onclick = "return confirm ('Voulez vous vraiment suppprimer cet utulisateur???')" href="SupprimerUtilisateur.php?id=${user.id}"> Supprimer </a></td>
+							<td>${cpte.id}</td>
+							<td>${cpte.type}</td>
+							<td>${cpte.dateCreation}</td>
+							<td>${cpte.idClient }</td>
+							<td>${cpte.idGestionnaire }</td>
+							<td>${cpte.solde}</td>
+							<td><a href="ModifierCompte.php?id=${cpte.id }"> Modifier </a></td>
+							<td><a onclick = "return confirm ('Voulez vous vraiment suppprimer ce compte')" href="SupprimerCompte.php?id=${cpte.id }"> Supprimer </a></td>
+							<td><a href="DebiterCompte.php?id=${cpte.id }"> Debiter </a></td>
 						</tr>
 
 					</c:forEach>

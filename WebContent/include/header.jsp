@@ -20,7 +20,11 @@
 	<img alt="logo VNU" src="image/ktx.jpg" width="100px" height="120px" align="right">
 </div>
 
-<div  class=" barreBleue container col-md-10 col-md-offset-1  col-xs-12">
-Bienvenue <%=login%> &nbsp;&nbsp; &nbsp;	&nbsp;<a href="index.jsp"><font color="white">logout</font></a></div>
+<div  style="height:80px" class=" barreBleue container col-md-10 col-md-offset-1  col-xs-12">
+
+<h4 align="center">Bienvenue sur KTX My Dinh Online Payement ! En poursuivant votre navigation, vous acceptez l'utilisation de cookies.</h4> 
+<%=login%> &nbsp;&nbsp; &nbsp;	&nbsp;<a href="index.jsp"><font color="white">logout</font></a>
+
+</div>
  
 </header>

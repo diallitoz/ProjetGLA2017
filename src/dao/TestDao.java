@@ -10,15 +10,17 @@ import java.util.List;
 
 import metier.entities.Client;
 import metier.entities.Compte;
+import metier.entities.Payement;
 import metier.entities.Utilisateur;
 
 public class TestDao { 
 
 	public static void main(String[] args) {
+		Payement payement = new Payement();
 		CompteDaoImplementation dao = new CompteDaoImplementation();
-		Compte cpte1 = dao.enregistrerCompte(new Compte("Prestataire", "2017.11.05", 5, 2, 100000.0));
-		/*Compte cpte2 = dao.enregistrerCompte(new Compte("Etudiant", "2017.10.27", 2, 15, 1000000.0));
-		Compte cpte3 = dao.enregistrerCompte(new Compte("Prestataire", "2017.10.27", 3, 1, 1000000.0));
+		Compte cpte1 = dao.enregistrerCompte(new Compte("Prestataire", "2017.11.07", 3, 2, 50000.0));
+		Compte cpte2 = dao.enregistrerCompte(new Compte("Etudiant", "2017.10.27", 30, 3, 100000.0));
+		/*Compte cpte3 = dao.enregistrerCompte(new Compte("Prestataire", "2017.10.27", 3, 1, 1000000.0));
 		System.out.println(cpte1.toString());
 		System.out.println(cpte2.toString());
 		System.out.println(cpte3.toString());
@@ -29,10 +31,13 @@ public class TestDao {
 		}*/
 		
 		System.out.println(cpte1.toString());
+		System.out.println(cpte2.toString());
 		
-		cpte1 = dao.debiterCompte(cpte1.getId(), 1000000.0, "");
+		payement = dao.EffectuerPayement(cpte2.getId(), cpte1.getId(), 45000.0, new Date().toString(), "Boutique");
 		
-		System.out.println(cpte1.toString());
+		//cpte1 = dao.debiterCompte(cpte1.getId(), 1000000.0, new Date());
+		
+		System.out.println(payement.toString());
 		
 		/*NumberFormat numberFormat = NumberFormat.getInstance(java.util.Locale.FRENCH);
 		
@@ -70,7 +75,7 @@ public class TestDao {
 					e.printStackTrace();
 				}*/
 				
-				UtilisateurDaoImplementation dao3 = new UtilisateurDaoImplementation();
+				//UtilisateurDaoImplementation dao3 = new UtilisateurDaoImplementation();
 				
 				/*Utilisateur user1 = dao3.enregistrerUtilisateur(new Utilisateur("Administrateur", "popo", "popo","popo@gmail.com", false));
 				System.out.println(user1.toString());*/
@@ -90,8 +95,26 @@ public class TestDao {
 					System.out.println(user.toString());
 				}*/
 				
+				/*Date date = new Date();
+								
+				String date1 = date.toString();
+				
+				System.out.println(date1);
+				*/
+				
+				//System.out.println(Boolean.parseBoolean("yes")) ;
 				
 				
+				//Payement payement = new Payement();
+				
+			
+				/*	
+					payement.setDatePayement(new Date().toString());
+					payement.setMontant(5000.0);
+					payement.setIdComptePayeur(2);
+					payement.setIdCompteBeneficiaire(3);
+					payement.setType("Essai");*/
+	
 				
 	}
 

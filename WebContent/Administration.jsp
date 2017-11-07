@@ -1,6 +1,4 @@
 
-
-
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html >
 <html>
@@ -17,6 +15,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     Ionicons
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
+
+<%-- <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/include/default_blue.css" />
+<script type="text/javascript" src="<%=request.getContextPath()%>/include/jsSimpleDatePickr.2.1.js"></script> --%>
+<link rel="stylesheet" media="screen, print, handheld" type="text/css" href="include/calendrier.css" />
+<script type="text/javascript" src="include/calendrier.js"></script>
+
 </head>
 <body>
 
@@ -33,8 +37,15 @@
 
 <div style="background-color:white"  class=" contenu container col-md-10  col-xs-7">
 <!-- <img alt="Globe terreste" src="image/Global3.jpg" align="right" > -->
-<img alt="OnlineShopping" src="image/OnlineShopping.jpg" width="800px" height="500px" align="left" >
+<img alt="OnlineShopping" src="image/OnlineShopping.jpg" width="835px" height="500px" align="left" >
 <!-- width="100px" height="120px" align="right" -->
+
+<div id="calendarMain" class="calendarMain">
+<script type="text/javascript">
+calendrier();
+</script>
+</div>
+
 
 </div>
 

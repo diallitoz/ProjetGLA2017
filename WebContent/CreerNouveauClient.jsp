@@ -23,7 +23,7 @@
 	
 <div  class=" menu container col-md-2  col-xs-3"><!-- Menu Administrateur -->
 
-<%@include file="include/menuAdministrateur.jsp"%>
+<%@include file="include/menuGestionnaire.jsp"%>
 </div>
 
 
@@ -130,7 +130,7 @@
 					
 					<div class="form-group">
 						<label for="telephone" class=" control-label "> Telephone* </label>
-						 <input type="text"	name="telephone" id="telephone" class="form-control" value = "${client.telephone }" required = "required" /> <span></span>
+						 <input type="tel"	name="telephone" id="telephone" class="form-control" value = "${client.telephone }" required = "required" /> <span></span>
 					</div>
 					
 					<div class="form-group">

@@ -72,8 +72,19 @@ public class ControleurServlet extends HttpServlet {
 			modeleCpte.setListeCompteRecherche(listeCompteRecherche);
 			
 			request.setAttribute("modeleCpte", modeleCpte);
+			request.getRequestDispatcher("RechercherCompte.jsp").forward(request, response);
+		}
+		
+		else if (path.equals("/OperationCompte.php")) {
+			Long idClient = Long.parseLong(request.getParameter("id"));
+			Compte compte = metier.getCompte(idClient);
+			
+			
+			request.setAttribute("cpte", compte);
+			NumberFormat numberFormat = NumberFormat.getInstance(java.util.Locale.ENGLISH);
+			request.setAttribute("soldeString", numberFormat.format(compte.getSolde())); 
 			request.getRequestDispatcher("VueCompte.jsp").forward(request, response);
-		} 
+		}
 		
 		else if (path.equals("/ConsulterCompte.php")) {
 			Long idClient = Long.parseLong(request.getParameter("idClient"));
@@ -102,7 +113,10 @@ public class ControleurServlet extends HttpServlet {
 			Double solde = Double.parseDouble(request.getParameter("solde"));
 
 			Compte cpte = metier.enregistrerCompte(new Compte(type, date, idClient, idGestionnaire, solde));
+			
 			request.setAttribute("compte", cpte);
+			NumberFormat numberFormat = NumberFormat.getInstance(java.util.Locale.ENGLISH);
+			request.setAttribute("soldeString", numberFormat.format(cpte.getSolde())); 
 			request.getRequestDispatcher("Confirmation.jsp").forward(request, response);
 
 		}
@@ -169,15 +183,61 @@ public class ControleurServlet extends HttpServlet {
 			Compte cpte = new Compte();
 
 			cpte.setId(id);
-			//cpte.setId(solde);
+						
 			cpte = metier.debiterCompte(cpte.getId(),montant, new Date());
+			
+			NumberFormat numberFormat = NumberFormat.getInstance(java.util.Locale.ENGLISH);
+			
+			
+			request.setAttribute("soldeString", numberFormat.format(cpte.getSolde())); 
+			request.setAttribute("montantString", numberFormat.format(montant)); 
 
 			request.setAttribute("compte", cpte);
-			request.setAttribute("montant", montant);
 			request.setAttribute("date", new Date());
 			request.getRequestDispatcher("ConfirmationVersement.jsp").forward(request, response);
 
 		}
+		
+		
+		else if (path.equals("/Payer.php")) {
+
+			Long id = Long.parseLong(request.getParameter("id"));
+			Compte cpte = metier.getCompte(id);
+			request.setAttribute("compte", cpte);
+			request.setAttribute("date", new Date());
+			request.getRequestDispatcher("Payer.jsp").forward(request, response);
+			// response.sendRedirect("chercher.php?motCle=");// Redirection vers
+			// une autre page...
+
+		}
+
+		else if (path.equals("/Payement.php") && request.getMethod().equals("POST")) {
+			
+			//String date = request.getParameter("date");
+			Long id = Long.parseLong(request.getParameter("id"));
+			
+			Double montant = Double.parseDouble(request.getParameter("montant"));
+
+			Compte cpte = new Compte();
+
+			cpte.setId(id);
+						
+			cpte = metier.debiterCompte(cpte.getId(),montant, new Date());
+			
+			NumberFormat numberFormat = NumberFormat.getInstance(java.util.Locale.ENGLISH);
+			
+			
+			request.setAttribute("soldeString", numberFormat.format(cpte.getSolde())); 
+			request.setAttribute("montantString", numberFormat.format(montant)); 
+
+			request.setAttribute("compte", cpte);
+			request.setAttribute("date", new Date());
+			request.getRequestDispatcher("ConfirmationPayement.jsp").forward(request, response);
+			request.getRequestDispatcher("NonConfirmationPayement.jsp").forward(request, response);
+
+		}
+		
+		
 		
 		
 		//Operations sur l'entite CLIENT a travers l'objet METIER2
@@ -191,9 +251,16 @@ public class ControleurServlet extends HttpServlet {
 			// Les "%" c'est pour signifier tt ce qui vient avant et apres le mot cle
 			modeleClient.setListeClientRecherche(listeClientRecherche);
 			request.setAttribute("modeleClient", modeleClient);
-			request.getRequestDispatcher("VueClient.jsp").forward(request, response);
+			request.getRequestDispatcher("RechercherClient.jsp").forward(request, response);
 		} 
 		
+		
+		else if (path.equals("/OperationClient.php")) {
+			Long idClient = Long.parseLong(request.getParameter("idClient"));
+			Client client = metier2.getClient(idClient);
+			request.setAttribute("client", client);
+			request.getRequestDispatcher("VueClient.jsp").forward(request, response);
+		}
 		
 		else if (path.equals("/CreerClient.php")) {
 			request.setAttribute("client", new Client());
@@ -294,7 +361,20 @@ public class ControleurServlet extends HttpServlet {
 			String login = request.getParameter("login");
 			String password = request.getParameter("password");
 			String email = request.getParameter("email");
-			Boolean status = Boolean.parseBoolean(request.getParameter("status"));
+			
+			String statusString = request.getParameter("status");
+			
+			Boolean status = false;
+			
+			if(statusString.equals("Active")){
+				status = true;
+			}
+			
+			else {
+				status = false;
+			}
+			
+			System.out.println(status);
 
 			Utilisateur user = metier3.enregistrerUtilisateur(new Utilisateur(profil, login, password, email, status));
 			request.setAttribute("user", user);
@@ -339,6 +419,8 @@ public class ControleurServlet extends HttpServlet {
 
 		}
 		
+		
+		//Controle de connexion......
 
 		else if (path.equals("/controleurLogin.php")) {
 			// Conroleur de l'affichage du MENU en fonction du Profil d'users...
@@ -372,7 +454,9 @@ public class ControleurServlet extends HttpServlet {
 					 status = rs.getBoolean("STATUS");
 					 id = rs.getLong("ID_UTILISATEUR");
 				} else {
-					 response.sendRedirect("index.jsp?id=wrong");
+					// System.out.println("EEERRRRRRRRRoooooooooooorrrrrrrr");
+					//response.sendRedirect("index.jsp?id=wrong");
+					request.getRequestDispatcher("index2.jsp").forward(request, response);
 				}
 				
 				if (profil.equals("Administrateur") &&  status) {

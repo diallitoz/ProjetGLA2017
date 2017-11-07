@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Confirmation versement</title>
+<title>Confirmation versement dans le compte ${compte.id}</title>
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css"
@@ -23,7 +23,7 @@
 	
 <div  class=" menu container col-md-2  col-xs-3"><!-- Menu Administrateur -->
 
-<%@include file="include/menuAdministrateur.jsp"%>
+<%@include file="include/menuGestionnaire.jsp"%>
 </div>
 
 
@@ -46,16 +46,16 @@
 				</div>
 
 				<div class="form-group">
-					<label> Montant verse :  </label> <label> ${montant}</label> VND
+					<label> Montant verse :  </label> <label> ${montantString}</label> VND
 				</div>
 
 				<div class="form-group">
 					<label> Effectue par le Gestionnaire :  </label> <label>
-						${compte.idGestionnaire}</label>
+						${sId}/${sLogin}</label>
 				</div>
 
 				<div class="form-group">
-					<label> Nouveau Solde :  </label> <label> ${compte.solde}</label> VND
+					<label> Nouveau Solde :  </label> <label> ${soldeString}</label> VND
 
 				</div>
 			</div>

@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Operations sur les clients</title>
+<title>Recherche clients</title>
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css"
@@ -36,18 +36,19 @@
 
 <div class=" panel panel-primary">
 
-			<div class=" panel-heading">Operations sur les clients </div>
+			<div class=" panel-heading">Recherche des clients </div>
 			 
 			<div class=" panel-body">
-			<a href="Administration.jsp"><button class="btn btn-danger btn-lg">HOME</button></a>
+			
+				<a href="Administration.jsp"><button class="btn btn-danger btn-lg">HOME</button></a>
 				<p style="margin-top: 10px"></p>
-
-				<form action="OperationClient.php" method="get">
-					<label for="idClient">Id Client </label> 
-					<input type="number" name="idClient" id="idClient" value="${client.id}" min="1" required = "required" />
-					<button type="submit" class="btn btn-primary">Appliquer</button>
-				</form>
 				
+				<form action="ChercherClient.php" method="get">
+					<label for="motCle">Mot cle </label> 
+					<input type="search" name="motCle" id="motCle" value="${modeleClient.motCle}" />
+					<button type="submit" class="btn btn-primary">Rechercher</button>
+					
+				</form>
 				<br>
 				<br>
 				
@@ -70,7 +71,7 @@
 						<th>SUPPRESSION</th>
 						<th>CREATION COMPTE</th>
 					</tr>
-					<%-- //<c:forEach items="${modeleClient.listeClientRecherche}" var="client"> --%>
+					<c:forEach items="${modeleClient.listeClientRecherche}" var="client">
 						<tr>
 
 							<td>${client.id}</td>
@@ -91,7 +92,7 @@
 							<td><a href="CreerCompte.php?id=${client.id }"> Creer compte </a></td>
 						</tr>
 
-					<%-- </c:forEach> --%>
+					</c:forEach>
 				</table>
 			</div>
 

@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 import metier.entities.Compte;
+import metier.entities.Payement;
 
 public interface ICompteDao {
 	
@@ -14,4 +15,6 @@ public interface ICompteDao {
 	public void supprimerCompte(Long id);
 	public Compte debiterCompte(Long id,double montant,Date date);
 	public Compte getCompte(Long id);
+	public Payement EffectuerPayement(Long idPayeur, Long idBeneficiaire, double montant, String datePayement,
+			String typePayement);
 }

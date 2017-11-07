@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Confirmation creation compte</title>
+<title>Confirmation creation compte ${compte.id} </title>
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css"
@@ -56,7 +56,7 @@
 				</div>
 
 				<div class="form-group">
-					<label> Solde :  </label> <label> ${compte.solde}</label> VND
+					<label> Solde :  </label> <label> ${soldeString}</label> VND
 
 				</div>
 			</div>
