@@ -92,6 +92,32 @@ public class CompteDaoImplementation implements ICompteDao {
 		}
 		return cpte;
 	}
+	
+	@Override
+	public Compte getCompteByIdClient(Long idClient) {
+		Compte cpte = null;
+		Connection connexion = SingletonConnexion.getConnexion();
+		try {
+			PreparedStatement ps = connexion.prepareStatement("SELECT * FROM COMPTE WHERE ID_CLIENT=?");
+
+			ps.setLong(1, idClient);
+			ResultSet resultat = ps.executeQuery();
+			if (resultat.next()) {
+				cpte = new Compte();
+				cpte.setId(resultat.getLong("ID_COMPTE"));
+				cpte.setType(resultat.getString("TYPE"));
+				cpte.setDateCreation(resultat.getString("DATE_CREATION"));
+				cpte.setIdClient(resultat.getLong("ID_CLIENT"));
+				cpte.setIdGestionnaire(resultat.getLong("ID_GESTIONNAIRE"));
+				cpte.setSolde(resultat.getDouble("SOLDE"));
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return cpte;
+	}
 
 	@Override
 	public Compte consulterCompte(Long id) {
@@ -203,23 +229,24 @@ public class CompteDaoImplementation implements ICompteDao {
 	
 	
 	@Override
-	public Payement EffectuerPayement(Long idPayeur,Long idBeneficiaire, double montant, String datePayement, String typePayement) {
+	public Payement EffectuerPayement(Long idComptePayeur,Long idCompteBeneficiaire, double montant, String datePayement, String typePayement) {
 		
-		Compte cptePayeur = getCompte(idPayeur);
-		Compte cpteBeneficiaire = getCompte(idBeneficiaire);
+		Compte cptePayeur = getCompte(idComptePayeur);
+		Compte cpteBeneficiaire = getCompte(idCompteBeneficiaire);
 		datePayement = new Date().toString();
 		Payement payement = new Payement();
 		
-		//if(cptePayeur.getSolde() >= montant + 100000.0){
+		if(cptePayeur.getSolde() >= montant + 100000.0){
+			
 			cptePayeur.setSolde(cptePayeur.getSolde() - montant);
 			cpteBeneficiaire.setSolde(cpteBeneficiaire.getSolde() + montant);
 			
 			payement.setDatePayement(datePayement);
 			payement.setMontant(montant);
-			payement.setIdComptePayeur(idPayeur);
-			payement.setIdCompteBeneficiaire(idBeneficiaire);
+			payement.setIdComptePayeur(idComptePayeur);
+			payement.setIdCompteBeneficiaire(idCompteBeneficiaire);
 			payement.setType(typePayement);
-		//}
+		}
 		
 		
 		Connection connexion = SingletonConnexion.getConnexion();

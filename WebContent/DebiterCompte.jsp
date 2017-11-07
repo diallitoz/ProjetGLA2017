@@ -50,7 +50,7 @@
 					
 					<div class="form-group">
 						<label for="montnat" class=" control-label "> Montant a verser* : </label>
-						<input type="text" name="montant" id="montant" class="form-control" placeholder = "Veuiller saisir le montant VND" required = "required" style="width:300px;"/><span></span>
+						<input type="number" name="montant" id="montant" class="form-control" placeholder = "Veuiller saisir le montant VND" required = "required" min=1 style="width:300px;"/><span></span>
 						<!-- <label class=" control-label "> VND </label>  -->
 					</div>
 				

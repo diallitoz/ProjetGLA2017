@@ -19,7 +19,7 @@ public class TestDao {
 		Payement payement = new Payement();
 		CompteDaoImplementation dao = new CompteDaoImplementation();
 		Compte cpte1 = dao.enregistrerCompte(new Compte("Prestataire", "2017.11.07", 3, 2, 50000.0));
-		Compte cpte2 = dao.enregistrerCompte(new Compte("Etudiant", "2017.10.27", 30, 3, 100000.0));
+		Compte cpte2 = dao.enregistrerCompte(new Compte("Etudiant", "2017.10.27", 30, 3, 150000.0));
 		/*Compte cpte3 = dao.enregistrerCompte(new Compte("Prestataire", "2017.10.27", 3, 1, 1000000.0));
 		System.out.println(cpte1.toString());
 		System.out.println(cpte2.toString());
@@ -33,7 +33,7 @@ public class TestDao {
 		System.out.println(cpte1.toString());
 		System.out.println(cpte2.toString());
 		
-		payement = dao.EffectuerPayement(cpte2.getId(), cpte1.getId(), 45000.0, new Date().toString(), "Boutique");
+		payement = dao.EffectuerPayement(cpte2.getId(), cpte1.getId(), 45000.0, new Date().toString(), "Pressing");
 		
 		//cpte1 = dao.debiterCompte(cpte1.getId(), 1000000.0, new Date());
 		

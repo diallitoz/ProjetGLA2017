@@ -3,7 +3,7 @@
   
    
  <li role="presentation"><a href="ConsulterCompte.jsp"><font color="white">Consulter solde</font></a></li>
- <li role="presentation"><a href="Payer.php"><font color="white">Effectuer un payement</font></a></li>
+ <li role="presentation"><a href="Payer.php?idClient=${sId}"><font color="white">Effectuer un payement</font></a></li>
  <li role="presentation"><a href="#"><font color="white">S'abonner</font></a></li>
  <li role="presentation"><a href="#"><font color="white">Mes abonnments</font></a></li>
  <li role="presentation"><a href="#"><font color="white">Historiques</font></a></li>

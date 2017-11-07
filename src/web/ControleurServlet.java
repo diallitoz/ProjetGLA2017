@@ -27,6 +27,7 @@ import dao.SingletonConnexion;
 import dao.UtilisateurDaoImplementation;
 import metier.entities.Client;
 import metier.entities.Compte;
+import metier.entities.Payement;
 import metier.entities.Utilisateur;
 
 @WebServlet(name = "cs", urlPatterns = { "/controleur", "*.php" }) // Deployement
@@ -201,8 +202,8 @@ public class ControleurServlet extends HttpServlet {
 		
 		else if (path.equals("/Payer.php")) {
 
-			Long id = Long.parseLong(request.getParameter("id"));
-			Compte cpte = metier.getCompte(id);
+			Long id = Long.parseLong(request.getParameter("idClient"));
+			Compte cpte = metier.getCompteByIdClient(id);
 			request.setAttribute("compte", cpte);
 			request.setAttribute("date", new Date());
 			request.getRequestDispatcher("Payer.jsp").forward(request, response);
@@ -213,27 +214,43 @@ public class ControleurServlet extends HttpServlet {
 
 		else if (path.equals("/Payement.php") && request.getMethod().equals("POST")) {
 			
-			//String date = request.getParameter("date");
-			Long id = Long.parseLong(request.getParameter("id"));
+			String date = request.getParameter("dateVersement");
+			
+			Long idCptePayeur = Long.parseLong(request.getParameter("id"));
+			
+			Long idCpteBenef = Long.parseLong(request.getParameter("compteBeneficiaire"));
 			
 			Double montant = Double.parseDouble(request.getParameter("montant"));
+			
+			String type = request.getParameter("type");
 
-			Compte cpte = new Compte();
+			Compte cptePayeur = metier.getCompte(idCptePayeur);
+			
+			Compte cpteBenef = metier.getCompte(idCpteBenef);
 
-			cpte.setId(id);
+			//cptePayeur.setId(idCptePayeur);
+			
+			//cpteBenef.setId(idCpteBenef);
 						
-			cpte = metier.debiterCompte(cpte.getId(),montant, new Date());
+			
+			Payement payement = metier.EffectuerPayement(cptePayeur.getId(), cpteBenef.getId(), montant, date, type);
 			
 			NumberFormat numberFormat = NumberFormat.getInstance(java.util.Locale.ENGLISH);
 			
 			
-			request.setAttribute("soldeString", numberFormat.format(cpte.getSolde())); 
-			request.setAttribute("montantString", numberFormat.format(montant)); 
+			request.setAttribute("soldeStringPayeur", numberFormat.format(cptePayeur.getSolde())); 
+			//request.setAttribute("soldeStringBeneficiaire", numberFormat.format(cpteBenef.getSolde())); 
+			//
+			
+			request.setAttribute("montantString", numberFormat.format(payement.getMontant())); 
+			
+			request.setAttribute("idBeneficiaire", cpteBenef.getIdClient()); 
 
-			request.setAttribute("compte", cpte);
-			request.setAttribute("date", new Date());
+			request.setAttribute("payement", payement);
+			//request.setAttribute("date", new Date());
 			request.getRequestDispatcher("ConfirmationPayement.jsp").forward(request, response);
-			request.getRequestDispatcher("NonConfirmationPayement.jsp").forward(request, response);
+			
+			//request.getRequestDispatcher("NonConfirmationPayement.jsp").forward(request, response);
 
 		}
 		

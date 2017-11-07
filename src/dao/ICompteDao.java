@@ -17,4 +17,5 @@ public interface ICompteDao {
 	public Compte getCompte(Long id);
 	public Payement EffectuerPayement(Long idPayeur, Long idBeneficiaire, double montant, String datePayement,
 			String typePayement);
+	public Compte getCompteByIdClient(Long idClient);
 }
