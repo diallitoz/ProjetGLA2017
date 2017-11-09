@@ -31,7 +31,7 @@
 	
 <div  class=" menu container col-md-2  col-xs-3"><!-- Menu Administrateur -->
 
-<%@include file="include/menuEtudiant.jsp"%>
+<%@include file="include/menuPrestataire.jsp"%>
 </div>
 
 
@@ -42,7 +42,7 @@
 			<div class=" panel-heading">Consultation de solde compte</div>
 			<div class=" panel-body">
 
-				<form action="ConsulterCompte.php" method="get">
+				<form action="ConsulterComptePresta.php" method="get">
 					<label for="idClient" >Numero Compte : </label> 
 					<input type="number" name="idClient" id="idClient" value = "${compte.id }" min=1 required = "required" />
 					<button type="submit" class="btn btn-primary">Consulter</button>

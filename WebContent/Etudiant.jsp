@@ -23,22 +23,23 @@
  
  <div  class=" blocContenu container col-md-10 col-md-offset-1  col-xs-12">
 	
-<div  class=" menu container col-md-2  col-xs-3"><!-- Menu Etdudiant -->
+<div  class=" menu container col-md-2  col-xs-3" style="fon: white;"><!-- Menu Etdudiant -->
 
 <%@include file="include/menuEtudiant.jsp"%>
+
 </div>
 
 
 <div style="background-color:white"  class=" contenu container col-md-10  col-xs-7">
 <!-- <img alt="Globe terreste" src="image/Global3.jpg" align="right" > -->
-<img alt="OnlineShopping" src="image/OnlineShopping.jpg" width="835px" height="500px" align="left" >
+<img class="img-responsive" alt="OnlineShopping" src="image/OnlineShopping.jpg" width="auto" height="auto" align="right"  >
 <!-- width="100px" height="120px" align="right" -->
 
-<div id="calendarMain" class="calendarMain">
+<!-- <div id="calendarMain" class="calendarMain">
 <script type="text/javascript">
 calendrier();
 </script>
-</div>
+</div> -->
 </div>
 
 </div>

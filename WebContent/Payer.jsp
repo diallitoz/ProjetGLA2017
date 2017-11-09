@@ -50,7 +50,7 @@
 					
 					<div class="form-group">
 						<label for="compteBeneficiaire" class=" control-label "> Numero Compte du benificiaire : </label> &nbsp;&nbsp;&nbsp;
-						<input type="number" name="compteBeneficiaire" id="compteBeneficiaire" class="form-control" value = "${compteBeneficiaire.id }" min=1 placeholder = "Veuiller saisir le numero de compte du beneficiaire" required = "required" style="width:350px;" /> <span></span>
+						<input type="number" name="compteBeneficiaire" id="compteBeneficiaire" class="form-control" value = "${compteBeneficiaire.id }" min=1 placeholder = "Veuiller saisir le numero de compte du beneficiaire" required = "required" style="width:400px;" /> <span></span>
 						<label class=" control-label "> ${compteBeneficiaire.id} </label> 
 					</div>
 					

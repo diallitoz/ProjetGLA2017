@@ -15,11 +15,11 @@
     Ionicons
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
 
-	<style type="text/css">
+	<!-- <style type="text/css">
     	th, td{
     		text-align: center;
     	}
-    </style>
+    </style> -->
 
 </head>
 <body>

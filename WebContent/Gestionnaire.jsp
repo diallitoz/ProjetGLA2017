@@ -31,14 +31,14 @@
 
 <div style="background-color:white"  class=" contenu container col-md-10  col-xs-7">
 <!-- <img alt="Globe terreste" src="image/Global3.jpg" align="right" > -->
-<img alt="OnlineShopping" src="image/OnlineShopping.jpg" width="835px" height="500px" align="left" >
+<img class="img-responsive" alt="OnlineShopping" src="image/OnlineShopping.jpg" width="auto" height="auto" align="right"  >
 <!-- width="100px" height="120px" align="right" -->
 
-<div id="calendarMain" class="calendarMain">
+<!-- <div id="calendarMain" class="calendarMain">
 <script type="text/javascript">
 calendrier();
 </script>
-</div>
+</div> -->
 
 
 </div>

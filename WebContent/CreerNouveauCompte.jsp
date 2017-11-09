@@ -47,20 +47,20 @@
 						<input type="radio" name="type" value="Etudiant" id="Etudiant" required = "required" /> <label for="Etudiant">Etudiant</label>
 					</div>
 					<div class="form-group">
-						<label class=" control-label "> Date* </label> <input type="date"
-							name="date" class="form-control" value = "${compte.dateCreation }" required = "required"/> <span></span>
+						<label class=" control-label "> Date* </label> 
+						<input type="date"	name="date" class="form-control" value = "${compte.dateCreation }" required = "required" placeholder = "Veuiller saisir la date de creation" style="width:400px;"/> <span></span>
 					</div>
 					<div class="form-group">
 						<label class=" control-label "> Id Client* </label> 
-						<input type="text" name="idClient" class="form-control" value = "${compte.idClient }" required = "required"/> <span></span>
+						<input type="number" name="idClient" class="form-control" value = "${id}" required = "required" min=1 placeholder = "Veuiller saisir l'ID du Client" style="width:400px;"/> <span></span>
 					</div>
 					<div class="form-group">
 						<label class=" control-label "> Id Gestionnaire* </label> <input
-							type="text" name="idGestionnaire" class="form-control" value = "${compte.idGestionnaire }" required = "required"/> <span></span>
+							type="number" name="idGestionnaire" class="form-control" value = "${compte.idGestionnaire }" required = "required" min=1 placeholder = "Veuiller saisir l'ID du Gestionnaire" style="width:400px;"/> <span></span>
 					</div>
 					<div class="form-group">
-						<label class=" control-label "> Solde* </label> <input type="text"
-							name="solde" class="form-control" value = "${compte.solde }" required = "required" /> <span></span>
+						<label class=" control-label "> Solde* </label> 
+						<input type="number" name="solde" class="form-control" value = "${compte.solde }" required = "required" placeholder = "Veuiller saisir un solde minimal" style="width:400px;" /> <span></span>
 					</div>
 
 					<div>

@@ -22,7 +22,9 @@ import dao.ClientDaoImplementation;
 import dao.CompteDaoImplementation;
 import dao.IClientDao;
 import dao.ICompteDao;
+import dao.IPayementDao;
 import dao.IUtilisateurDao;
+import dao.PayementDaoImplementation;
 import dao.SingletonConnexion;
 import dao.UtilisateurDaoImplementation;
 import metier.entities.Client;
@@ -41,6 +43,7 @@ public class ControleurServlet extends HttpServlet {
 	private ICompteDao metier;
 	private IClientDao metier2;
 	private IUtilisateurDao metier3;
+	private IPayementDao metier4;
 
 	@Override
 	public void init() throws ServletException {
@@ -49,6 +52,7 @@ public class ControleurServlet extends HttpServlet {
 		//les injections...
 		metier2 = new ClientDaoImplementation();
 		metier3 = new UtilisateurDaoImplementation();
+		metier4 = new PayementDaoImplementation();
 		
 	}
 
@@ -100,6 +104,21 @@ public class ControleurServlet extends HttpServlet {
 			request.setAttribute("date", new Date());
 			request.getRequestDispatcher("ConsulterCompte.jsp").forward(request, response);
 		} 
+		
+		else if (path.equals("/ConsulterComptePresta.php")) {
+			Long idClient = Long.parseLong(request.getParameter("idClient"));
+			CompteModele modeleCpte = new CompteModele();
+			modeleCpte.setIdClient(idClient);
+			Compte compte = metier.consulterCompte(idClient);
+			modeleCpte.setCompte(compte);
+			//request.setAttribute("modeleCpte", modeleCpte);
+			request.setAttribute("compte", compte);
+			NumberFormat numberFormat = NumberFormat.getInstance(java.util.Locale.ENGLISH);
+			request.setAttribute("soldeString", numberFormat.format(compte.getSolde())); 
+			request.setAttribute("date", new Date());
+			request.getRequestDispatcher("ConsulterComptePresta.jsp").forward(request, response);
+		} 
+		
 		
 		else if (path.equals("/CreerCompte.php")) {
 			request.setAttribute("compte", new Compte());
@@ -231,30 +250,35 @@ public class ControleurServlet extends HttpServlet {
 			//cptePayeur.setId(idCptePayeur);
 			
 			//cpteBenef.setId(idCpteBenef);
-						
-			
-			Payement payement = metier.EffectuerPayement(cptePayeur.getId(), cpteBenef.getId(), montant, date, type);
-			
-			NumberFormat numberFormat = NumberFormat.getInstance(java.util.Locale.ENGLISH);
-			
-			
-			request.setAttribute("soldeStringPayeur", numberFormat.format(cptePayeur.getSolde())); 
-			//request.setAttribute("soldeStringBeneficiaire", numberFormat.format(cpteBenef.getSolde())); 
-			//
-			
-			request.setAttribute("montantString", numberFormat.format(payement.getMontant())); 
-			
-			request.setAttribute("idBeneficiaire", cpteBenef.getIdClient()); 
 
-			request.setAttribute("payement", payement);
-			//request.setAttribute("date", new Date());
-			request.getRequestDispatcher("ConfirmationPayement.jsp").forward(request, response);
+			Payement payement = null;
 			
-			//request.getRequestDispatcher("NonConfirmationPayement.jsp").forward(request, response);
+			payement = metier.EffectuerPayement(cptePayeur.getId(), cpteBenef.getId(), montant, date, type);
+			
+			
+			if(payement.getMontant() != 0){
+				
+				NumberFormat numberFormat = NumberFormat.getInstance(java.util.Locale.ENGLISH);
+				
+				cptePayeur = metier.getCompte(cptePayeur.getId());
+				
+				
+				request.setAttribute("soldeStringPayeur", numberFormat.format(cptePayeur.getSolde())); 
+				//request.setAttribute("soldeStringBeneficiaire", numberFormat.format(cpteBenef.getSolde())); 
+				//
+				
+				request.setAttribute("montantString", numberFormat.format(payement.getMontant())); 
+				
+				request.setAttribute("idBeneficiaire", cpteBenef.getIdClient()); 
+
+				request.setAttribute("payement", payement);
+				//request.setAttribute("date", new Date());
+				request.getRequestDispatcher("ConfirmationPayement.jsp").forward(request, response);
+			}
+			
+			else request.getRequestDispatcher("NonConfirmationPayement.jsp").forward(request, response);
 
 		}
-		
-		
 		
 		
 		//Operations sur l'entite CLIENT a travers l'objet METIER2
@@ -391,7 +415,7 @@ public class ControleurServlet extends HttpServlet {
 				status = false;
 			}
 			
-			System.out.println(status);
+			//System.out.println(status);
 
 			Utilisateur user = metier3.enregistrerUtilisateur(new Utilisateur(profil, login, password, email, status));
 			request.setAttribute("user", user);
@@ -435,6 +459,26 @@ public class ControleurServlet extends HttpServlet {
 			response.sendRedirect("ChercherUtilisateur.php?motCle=");// Redirection vers une autre page...
 
 		}
+		
+		
+		
+		
+	//Operations sur l'entite PAYEMENT a travers l'objet METIER4
+		
+		
+		else if (path.equals("/HistoriquePayement.php")) {
+			Long idCompte = Long.parseLong(request.getParameter("iDCompte"));
+			String motCle = request.getParameter("motCle");
+			PayementModele modelePayement = new PayementModele();
+			modelePayement.setMotCle(motCle);
+			List<Payement> listePayementRecherche = metier4.rechercherPayement(idCompte,"%" + motCle + "%");
+			// Les "%" c'est pour signifier tt ce qui vient avant et apres le mot cle
+			modelePayement.setListePayementRecherche(listePayementRecherche);
+			request.setAttribute("modelePayement", modelePayement);
+			request.getRequestDispatcher("RechercherPayement.jsp").forward(request, response);
+		} 
+		
+		
 		
 		
 		//Controle de connexion......
@@ -529,7 +573,7 @@ public class ControleurServlet extends HttpServlet {
 				}
 				
 				else{
-					 response.sendRedirect("index.jsp?id=wrong");
+					request.getRequestDispatcher("index2.jsp").forward(request, response);
 					
 				}
 				

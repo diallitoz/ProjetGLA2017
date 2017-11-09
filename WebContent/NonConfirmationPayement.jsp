@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Acceuil Prestataire</title>
+<title>Erreur dans le payement par le client ${sId}</title>
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css"
@@ -14,8 +14,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     Ionicons
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
-     <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="include/calendrier.css" />
-	<script type="text/javascript" src="include/calendrier.js"></script>
 </head>
 <body>
 
@@ -23,23 +21,28 @@
  
  <div  class=" blocContenu container col-md-10 col-md-offset-1  col-xs-12">
 	
-<div  class=" menu container col-md-2  col-xs-3"><!-- Menu Prestataire -->
+<div  class=" menu container col-md-2  col-xs-3"><!-- Menu Administrateur -->
 
-<%@include file="include/menuPrestataire.jsp"%>
+<%@include file="include/menuEtudiant.jsp"%>
 </div>
 
 
-<div style="background-color:white"  class=" contenu container col-md-10  col-xs-7">
-<!-- <img alt="Globe terreste" src="image/Global3.jpg" align="right" > -->
-<img class="img-responsive" alt="OnlineShopping" src="image/OnlineShopping.jpg" width="auto" height="auto" align="right"  >
-<!-- width="100px" height="120px" align="right" -->
+<div  class=" contenu container col-md-10  col-xs-7">
 
-<!-- <div id="calendarMain" class="calendarMain">
-<script type="text/javascript">
-calendrier();
-</script>
-</div> -->
+<div class=" panel panel-primary">
 
+			<div class=" panel-heading">Erreur du payement !!!</div>
+			<div class=" panel-body">
+			
+				<div class="form-group">
+					Veuiller revoir les donnees saisies...
+					<a href="Payer.php?idClient=${sId}"><button class="btn btn-danger btn-lg">Ressayer</button></a>
+				<p style="margin-top: 10px"></p>
+				</div>
+				
+			</div>
+
+		</div>
 </div>
 
 </div>

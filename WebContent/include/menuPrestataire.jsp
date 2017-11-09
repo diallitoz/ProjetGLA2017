@@ -3,7 +3,7 @@
   
  <!-- ----------------------------------------------------------------------------------------------- -->
   <!--  partie de Prestataire -->
-  <li role="presentation"><a href="ConsulterCompte.jsp"><font color="white">Consulter solde</font></a></li>
+  <li role="presentation"><a href="ConsulterComptePresta.jsp"><font color="white">Consulter solde</font></a></li>
   <li role="presentation"><a href="#"><font color="white">Effectuer un payement</font></a></li>
   <li role="presentation"><a href="#"><font color="white">Historiques</font></a></li>    
   

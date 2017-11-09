@@ -41,6 +41,31 @@ background-color:#a19a9a;
 }
 
 
-a{
+/* a{
 	color:#888a85;
+} */
+
+a, a:visited {
+    /* Les liens &quot;au repos&quot; et déjà visités antérieurement */
+    color:blue; /* couleur blanche */
 }
+a:hover, a:focus, a:active {
+    /* Les liens au survol, au focus, et actifs : on leur donne la couleur rouge pour l'exemple */
+    color: #ff0000;
+}
+
+
+th, td{
+    		text-align: center;
+    	}
+    	
+/* li ul {
+display:none;
+}
+li:hover ul {
+display:block;
+position:relative;
+top:0;
+left:-25px;
+}
+    	 */

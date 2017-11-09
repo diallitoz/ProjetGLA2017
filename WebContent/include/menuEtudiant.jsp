@@ -1,4 +1,17 @@
-<ul class="nav nav-pills nav-stacked " style="width:170px;">
+<ul class="nav nav-pills nav-stacked " 
+
+style="width:170px;
+text-color:white;
+a {
+    color:white;
+};
+
+a:hover {
+color:red;
+text-decoration:none;
+};
+
+">
   <li role="presentation" class="active"><a href="Etudiant.jsp">Menu Etudiant</a></li>
   
    
@@ -6,7 +19,7 @@
  <li role="presentation"><a href="Payer.php?idClient=${sId}"><font color="white">Effectuer un payement</font></a></li>
  <li role="presentation"><a href="#"><font color="white">S'abonner</font></a></li>
  <li role="presentation"><a href="#"><font color="white">Mes abonnments</font></a></li>
- <li role="presentation"><a href="#"><font color="white">Historiques</font></a></li>
+ <li role="presentation"><a href="RechercherPayement.jsp"><font color="white">Historiques</font></a></li>
    
          
      <!-- ----------------------------------------------------------------------------------------------- -->

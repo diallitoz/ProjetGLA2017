@@ -14,11 +14,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     Ionicons
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
-    <style type="text/css">
+    <!-- <style type="text/css">
     	th, td{
     		text-align: center;
     	}
-    </style>
+    </style> -->
 </head>
 <body>
 
@@ -39,7 +39,7 @@
 			<div class=" panel-heading">Operations sur les clients </div>
 			 
 			<div class=" panel-body">
-			<a href="Administration.jsp"><button class="btn btn-danger btn-lg">HOME</button></a>
+			<a href="Gestionnaire.jsp"><button class="btn btn-danger btn-lg">Menu Gestionnaire</button></a>
 				<p style="margin-top: 10px"></p>
 
 				<form action="OperationClient.php" method="get">
@@ -53,40 +53,43 @@
 				
 				<table class="table table-striped">
 					<tr>
-						<th>ID</th>
 						<th>CIVILITE</th>
+						<!-- <th>ID</th>-->
+						
 						<th>NOM</th>
 						<th>PRENOM</th>
-						<th>DATE DE NAISSANCE</th>
-						<th>LIEU DE NAISSANCE</th>
-						<th>SEXE</th>
 						<th>TYPE</th>
+						<!-- <th>DATE DE NAISSANCE</th>
+						<th>LIEU DE NAISSANCE</th> -->
+						<!-- <th>SEXE</th> -->
+						<!-- 
 						<th>PIECE D'IDENTITE</th>
 						<th>REFERENCE DE LA PIECE D'IDENTITE</th>
-						<th>ADRESSE</th>
+						<th>ADRESSE</th> -->
 						<th>TELEPHONE</th>
 						<th>EMAIL</th>
-						<th>MODIFICATION</th>
+						<th>DETAILS</th>
 						<th>SUPPRESSION</th>
 						<th>CREATION COMPTE</th>
 					</tr>
 					<%-- //<c:forEach items="${modeleClient.listeClientRecherche}" var="client"> --%>
 						<tr>
-
-							<td>${client.id}</td>
 							<td>${client.civilite}</td>
+							<%-- <td>${client.id}</td>
+							<td>${client.civilite}</td> --%>
 							<td>${client.nom}</td>
 							<td>${client.prenom}</td>
-							<td>${client.dateNaissance}</td>
-							<td>${client.lieuNaissance}</td>
-							<td>${client.sexe}</td>
 							<td>${client.type}</td>
+							<%-- <td>${client.dateNaissance}</td>
+							<td>${client.lieuNaissance}</td> --%>
+							<%-- <td>${client.sexe}</td> --%>
+							<%-- 
 							<td>${client.pieceIdentite}</td>
-							<td>${client.refPieceIdentite}</td>
-							<td>${client.adresse}</td>
+							<td>${client.refPieceIdentite}</td> --%>
+							<%-- <td>${client.adresse}</td> --%>
 							<td>${client.telephone}</td>
 							<td>${client.email}</td>	
-							<td><a href="ModifierClient.php?id=${client.id }"> Modifier </a></td>
+							<td><a href="ModifierClient.php?id=${client.id }"> Visualiser </a></td>
 							<td><a onclick = "return confirm ('Voulez vous vraiment suppprimer ce client???')" href="SupprimerClient.php?id=${client.id }"> Supprimer </a></td>
 							<td><a href="CreerCompte.php?id=${client.id }"> Creer compte </a></td>
 						</tr>

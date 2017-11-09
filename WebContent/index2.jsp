@@ -22,8 +22,9 @@
 <div  class=" barreBleue container col-md-10 col-md-offset-1  col-xs-12"></div>
 
 <div  class=" container col-md-10 col-md-offset-1  col-xs-12">
-	<img alt="logo VNU" src="image/logoDHQG.jpg" height="120px"> 
-	<img alt="logo VNU" src="image/ktx.jpg" width="100px" height="120px" align="right">
+	<img class="img-responsive" alt="logo VNU ktx" src="image/banniereRevu.JPG" width="auto"> 
+	<!-- <img alt="logo VNU" src="image/logoDHQG.jpg" height="120px">  -->
+	<!-- <img alt="logo VNU" src="image/ktx.jpg" width="100px" height="120px" align="right"> -->
 </div>
 
 <div  class="barreBleue container col-md-10 col-md-offset-1  col-xs-12">
@@ -39,7 +40,7 @@
 			</div>
 			<div class=" panel-body">
 <p style="color:red; text-align:center">
-login ou mot de passe incorrect.
+login ou mot de passe incorrect ou compte non active.
 Veuiller ressayer... (03 essais possibles!!!)
 </p>
 				<form method="post" action="controleurLogin.php">

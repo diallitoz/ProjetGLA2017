@@ -40,3 +40,20 @@
   <!--  partie de Personnaliser -->
   <li role="presentation"><a href="#"><font color="white">Personnaliser</font></a></li>
 </ul>
+
+
+
+<!-- <ul>
+<li><a href="">Item 1</a></li>
+<li><a href="">Item 2</a>
+  <ul>
+   <li><a href="">Item 2.1</a></li>
+   <li><a href="">Item 2.2</a></li>
+  </ul>
+</li>
+<li><a href="">Item 3</a></li>
+</ul>
+ -->
+
+
+
