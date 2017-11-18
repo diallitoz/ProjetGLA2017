@@ -73,7 +73,7 @@
 							<td>${cpte.solde}</td>
 							<td><a href="ModifierCompte.php?id=${cpte.id }"> Modifier </a></td>
 							<td><a onclick = "return confirm ('Voulez vous vraiment suppprimer ce compte')" href="SupprimerCompte.php?id=${cpte.id }"> Supprimer </a></td>
-							<td><a href="DebiterCompte.php?id=${cpte.id }"> Debiter </a></td>
+							<td><a href="CrediterCompte.php?id=${cpte.id }"> Crediter </a></td>
 						</tr>
 
 					</c:forEach>

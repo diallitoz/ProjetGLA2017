@@ -56,7 +56,7 @@
 					</div>
 					<div class="form-group">
 						<label class=" control-label "> Id Gestionnaire* </label> <input
-							type="number" name="idGestionnaire" class="form-control" value = "${compte.idGestionnaire }" required = "required" min=1 placeholder = "Veuiller saisir l'ID du Gestionnaire" style="width:400px;"/> <span></span>
+							type="number" name="idGestionnaire" class="form-control" required = "required" min=1 placeholder = "Veuiller saisir l'ID du Gestionnaire" style="width:400px;"/> <span></span>
 					</div>
 					<div class="form-group">
 						<label class=" control-label "> Solde* </label> 

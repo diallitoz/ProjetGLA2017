@@ -28,7 +28,7 @@
  
  <div  class=" blocContenu container col-md-10 col-md-offset-1  col-xs-12">
 	
-<div  class=" menu container col-md-2  col-xs-3"><!-- Menu Administrateur -->
+<div  class=" menu container col-md-2  col-xs-3"><!-- Menu Etudiant -->
 
 <%@include file="include/menuEtudiant.jsp"%>
 </div>

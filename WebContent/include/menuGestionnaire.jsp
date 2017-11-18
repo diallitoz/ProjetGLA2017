@@ -5,7 +5,7 @@
   
 		<li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><font color="white">Gestion Client</font> <span class="caret"></span></a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" >
           
               <li role="separator" class="divider"></li>
              	<!-- <li><a href="#" style="color:red">Gestion Client</a></li> -->

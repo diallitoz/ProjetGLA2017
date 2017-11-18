@@ -15,11 +15,11 @@ text-decoration:none;
   <li role="presentation" class="active"><a href="Etudiant.jsp">Menu Etudiant</a></li>
   
    
- <li role="presentation"><a href="ConsulterCompte.jsp"><font color="white">Consulter solde</font></a></li>
- <li role="presentation"><a href="Payer.php?idClient=${sId}"><font color="white">Effectuer un payement</font></a></li>
- <li role="presentation"><a href="#"><font color="white">S'abonner</font></a></li>
- <li role="presentation"><a href="#"><font color="white">Mes abonnments</font></a></li>
- <li role="presentation"><a href="RechercherPayement.jsp"><font color="white">Historiques</font></a></li>
+ <li role="presentation" class="active"><a href="ConsulterCompte.jsp"><font color="white">Consulter solde</font></a></li>
+ <li role="presentation" class="active"><a href="Payer.php?idClient=${sId}"><font color="white">Effectuer un payement</font></a></li>
+ <li role="presentation" class="active"><a href="#"><font color="white">S'abonner</font></a></li>
+ <li role="presentation" class="active"><a href="#"><font color="white">Mes abonnments</font></a></li>
+ <li role="presentation" class="active"><a href="RechercherPayement.jsp"><font color="white">Historiques</font></a></li>
    
          
      <!-- ----------------------------------------------------------------------------------------------- -->
@@ -44,5 +44,5 @@ text-decoration:none;
   
    <!-- ----------------------------------------------------------------------------------------------- -->
   <!--  partie de Personnaliser -->
-  <li role="presentation"><a href="#"><font color="white">Personnaliser</font></a></li>
+  <li role="presentation" class="active"><a href="#"><font color="white">Personnaliser</font></a></li>
 </ul>

@@ -181,13 +181,13 @@ public class ControleurServlet extends HttpServlet {
 
 		}
 
-		else if (path.equals("/DebiterCompte.php")) {
+		else if (path.equals("/CrediterCompte.php")) {
 
 			Long id = Long.parseLong(request.getParameter("id"));
 			Compte cpte = metier.getCompte(id);
 			request.setAttribute("compte", cpte);
 			request.setAttribute("date", new Date());
-			request.getRequestDispatcher("DebiterCompte.jsp").forward(request, response);
+			request.getRequestDispatcher("CrediterCompte.jsp").forward(request, response);
 			// response.sendRedirect("chercher.php?motCle=");// Redirection vers
 			// une autre page...
 
@@ -204,7 +204,7 @@ public class ControleurServlet extends HttpServlet {
 
 			cpte.setId(id);
 						
-			cpte = metier.debiterCompte(cpte.getId(),montant, new Date());
+			cpte = metier.crediterCompte(cpte.getId(),montant, new Date());
 			
 			NumberFormat numberFormat = NumberFormat.getInstance(java.util.Locale.ENGLISH);
 			
@@ -478,6 +478,18 @@ public class ControleurServlet extends HttpServlet {
 			request.getRequestDispatcher("RechercherPayement.jsp").forward(request, response);
 		} 
 		
+		
+		else if (path.equals("/HistoriquePayementPresta.php")) {
+			Long idCompte = Long.parseLong(request.getParameter("iDCompte"));
+			String motCle = request.getParameter("motCle");
+			PayementModele modelePayement = new PayementModele();
+			modelePayement.setMotCle(motCle);
+			List<Payement> listePayementRecherche = metier4.rechercherPayementPresta(idCompte,"%" + motCle + "%");
+			// Les "%" c'est pour signifier tt ce qui vient avant et apres le mot cle
+			modelePayement.setListePayementRecherche(listePayementRecherche);
+			request.setAttribute("modelePayement", modelePayement);
+			request.getRequestDispatcher("RechercherPayementPresta.jsp").forward(request, response);
+		} 
 		
 		
 		

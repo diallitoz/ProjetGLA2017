@@ -10,35 +10,39 @@ import java.util.List;
 import metier.entities.Client;
 
 public class ClientDaoImplementation implements IClientDao {
+	
+	public void setClient(){
+		
+	}
 
 	@Override
 	public Client enregistrerClient(Client client) {
-		Connection connexion = SingletonConnexion.getConnexion();
+		final Connection connexion = SingletonConnexion.getConnexion();
 		try {
-			PreparedStatement ps = connexion.prepareStatement(
+			PreparedStatement prepaStat = connexion.prepareStatement(
 					"INSERT INTO CLIENT (CIVILITE,NOM,PRENOM,DATE_NAISSANCE,LIEU_NAISSANCE,SEXE,TYPE_CLIENT,"
 							+ "TYPE_PIECE_IDENTITE,REF_PIECE_IDENTITE,ADRESSE,TELEPHONE,EMAIL) "
 							+ "VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
-			ps.setString(1, client.getCivilite());
-			ps.setString(2, client.getNom());
-			ps.setString(3, client.getPrenom());
-			ps.setString(4, client.getDateNaissance());
-			ps.setString(5, client.getLieuNaissance());
-			ps.setString(6, client.getSexe());
-			ps.setString(7, client.getType());
-			ps.setString(8, client.getPieceIdentite());
-			ps.setString(9, client.getRefPieceIdentite());
-			ps.setString(10, client.getAdresse());
-			ps.setString(11, client.getTelephone());
-			ps.setString(12, client.getEmail());
+			prepaStat.setString(1, client.getCivilite());
+			prepaStat.setString(2, client.getNom());
+			prepaStat.setString(3, client.getPrenom());
+			prepaStat.setString(4, client.getDateNaissance());
+			prepaStat.setString(5, client.getLieuNaissance());
+			prepaStat.setString(6, client.getSexe());
+			prepaStat.setString(7, client.getType());
+			prepaStat.setString(8, client.getPieceIdentite());
+			prepaStat.setString(9, client.getRefPieceIdentite());
+			prepaStat.setString(10, client.getAdresse());
+			prepaStat.setString(11, client.getTelephone());
+			prepaStat.setString(12, client.getEmail());
 	
-			ps.executeUpdate();
+			prepaStat.executeUpdate();
 			PreparedStatement ps2 = connexion.prepareStatement("SELECT MAX(ID_CLIENT) AS MAX_ID FROM CLIENT");
 			ResultSet rs = ps2.executeQuery();
 			if (rs.next()) {
 				client.setId(rs.getLong("MAX_ID"));
 			}
-			ps.close();
+			prepaStat.close();
 			// connexion.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -84,42 +88,6 @@ public class ClientDaoImplementation implements IClientDao {
 				listClient.add(client);
 			}
 			
-				
-			/*	while (resultat2.next()) {
-					Client client2 = new Client();
-				client2.setId(resultat2.getLong("ID_CLIENT"));
-				client2.setCivilite(resultat2.getString("CIVILITE"));
-				client2.setNom(resultat2.getString("NOM"));
-				client2.setPrenom(resultat2.getString("PRENOM"));
-				client2.setDateNaissance(resultat2.getString("DATE_NAISSANCE"));
-				client2.setLieuNaissance(resultat2.getString("LIEU_NAISSANCE"));
-				client2.setSexe(resultat2.getString("SEXE"));
-				client2.setType(resultat2.getString("TYPE_CLIENT"));
-				client2.setPieceIdentite(resultat2.getString("TYPE_PIECE_IDENTITE"));
-				client2.setRefPieceIdentite(resultat2.getString("REF_PIECE_IDENTITE"));
-				client2.setAdresse(resultat2.getString("ADRESSE"));
-				client2.setTelephone(resultat2.getString("TELEPHONE"));
-				client2.setEmail(resultat2.getString("EMAIL"));
-				listClient.add(client2);
-				}
-				
-				while (resultat3.next()) {
-				Client client3 = new Client();
-				client3.setId(resultat3.getLong("ID_CLIENT"));
-				client3.setCivilite(resultat3.getString("CIVILITE"));
-				client3.setNom(resultat3.getString("NOM"));
-				client3.setPrenom(resultat3.getString("PRENOM"));
-				client3.setDateNaissance(resultat3.getString("DATE_NAISSANCE"));
-				client3.setLieuNaissance(resultat3.getString("LIEU_NAISSANCE"));
-				client3.setSexe(resultat3.getString("SEXE"));
-				client3.setType(resultat3.getString("TYPE_CLIENT"));
-				client3.setPieceIdentite(resultat3.getString("TYPE_PIECE_IDENTITE"));
-				client3.setRefPieceIdentite(resultat3.getString("REF_PIECE_IDENTITE"));
-				client3.setAdresse(resultat3.getString("ADRESSE"));
-				client3.setTelephone(resultat3.getString("TELEPHONE"));
-				client3.setEmail(resultat3.getString("EMAIL"));
-				listClient.add(client3);
-			}*/
 
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block

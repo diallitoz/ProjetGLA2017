@@ -182,7 +182,7 @@ public class CompteDaoImplementation implements ICompteDao {
 	}
 
 	@Override
-	public Compte debiterCompte(Long id, double montant, Date date) {
+	public Compte crediterCompte(Long id, double montant, Date date) {
 		
 		Compte cpte = getCompte(id);
 		date = new Date();

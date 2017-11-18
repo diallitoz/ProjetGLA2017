@@ -40,6 +40,34 @@ public class PayementDaoImplementation implements IPayementDao {
 		}
 		return listPayement;
 	}
+	
+
+	@Override
+	public List<Payement> rechercherPayementPresta(Long iDCompte, String motCle) {
+		List<Payement> listPayement = new ArrayList<Payement>();
+		Connection connexion = SingletonConnexion.getConnexion();
+		try {
+			PreparedStatement ps = connexion.prepareStatement("SELECT * FROM PAYEMENT WHERE ((DATE_PAYEMENT LIKE LOWER('%"+motCle+"%') OR TYPE_PAYEMENT LIKE LOWER('%"+motCle+"%')) AND ID_CPTE_BENEF LIKE ?)");
+
+			ps.setLong(1, iDCompte);
+			ResultSet resultat = ps.executeQuery();
+			while (resultat.next()) {
+				Payement payement = new Payement();
+				payement.setId(resultat.getLong("ID_PAYEMENT"));
+				payement.setType(resultat.getString("TYPE_PAYEMENT"));
+				payement.setDatePayement(resultat.getString("DATE_PAYEMENT"));
+				payement.setIdComptePayeur(resultat.getLong("ID_CPTE_PAYEUR"));
+				payement.setIdCompteBeneficiaire(resultat.getLong("ID_CPTE_BENEF"));
+				payement.setMontant(resultat.getDouble("MONTANT"));
+				listPayement.add(payement);
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return listPayement;
+	}
 
 	@Override
 	public Payement getPayement(Long id) {

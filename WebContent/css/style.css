@@ -51,7 +51,8 @@ a, a:visited {
 }
 a:hover, a:focus, a:active {
     /* Les liens au survol, au focus, et actifs : on leur donne la couleur rouge pour l'exemple */
-    color: #ff0000;
+   /*  color: #ff0000; */
+    background-color: #337ab7;
 }
 
 

@@ -3,9 +3,9 @@
   
  <!-- ----------------------------------------------------------------------------------------------- -->
   <!--  partie de Prestataire -->
-  <li role="presentation"><a href="ConsulterComptePresta.jsp"><font color="white">Consulter solde</font></a></li>
-  <li role="presentation"><a href="#"><font color="white">Effectuer un payement</font></a></li>
-  <li role="presentation"><a href="#"><font color="white">Historiques</font></a></li>    
+  <li role="presentation" class="active"><a href="ConsulterComptePresta.jsp"><font color="white">Consulter solde</font></a></li>
+  <li role="presentation" class="active"><a href="#"><font color="white">Effectuer un payement</font></a></li>
+  <li role="presentation" class="active"><a href="RechercherPayementPresta.jsp"><font color="white">Historiques</font></a></li>    
   
   <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Prestataire <span class="caret"></span></a>
@@ -22,5 +22,5 @@
   
    <!-- ----------------------------------------------------------------------------------------------- -->
   <!--  partie de Personnaliser -->
-  <li role="presentation"><a href="#"><font color="white">Personnaliser</font></a></li>
+  <li role="presentation" class="active"><a href="#"><font color="white">Personnaliser</font></a></li>
 </ul>

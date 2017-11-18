@@ -1,0 +1,1393 @@
+src/dao/AllTests.java:9:	Each class should declare at least one constructor
+src/dao/AllTests.java:9:	headerCommentRequirement Required
+src/dao/ClientDaoImplementation.java:12:	Each class should declare at least one constructor
+src/dao/ClientDaoImplementation.java:12:	headerCommentRequirement Required
+src/dao/ClientDaoImplementation.java:15:	Parameter 'client' is not assigned and could be declared final
+src/dao/ClientDaoImplementation.java:15:	publicMethodCommentRequirement Required
+src/dao/ClientDaoImplementation.java:16:	Ensure that resources like this Connection object are closed after use
+src/dao/ClientDaoImplementation.java:16:	Local variable 'connexion' could be declared final
+src/dao/ClientDaoImplementation.java:18:	Avoid variables with short names like ps
+src/dao/ClientDaoImplementation.java:18:	Local variable 'ps' could be declared final
+src/dao/ClientDaoImplementation.java:18:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:22:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:23:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:24:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:25:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:26:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:27:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:28:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:29:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:30:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:32:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:33:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:35:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:36:	Local variable 'ps2' could be declared final
+src/dao/ClientDaoImplementation.java:36:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:37:	Avoid variables with short names like rs
+src/dao/ClientDaoImplementation.java:37:	Ensure that resources like this ResultSet object are closed after use
+src/dao/ClientDaoImplementation.java:37:	Local variable 'rs' could be declared final
+src/dao/ClientDaoImplementation.java:37:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:38:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:41:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:45:	Avoid printStackTrace(); use a logger call instead.
+src/dao/ClientDaoImplementation.java:51:	Parameter 'motCle' is not assigned and could be declared final
+src/dao/ClientDaoImplementation.java:51:	publicMethodCommentRequirement Required
+src/dao/ClientDaoImplementation.java:52:	Local variable 'listClient' could be declared final
+src/dao/ClientDaoImplementation.java:53:	Ensure that resources like this Connection object are closed after use
+src/dao/ClientDaoImplementation.java:53:	Local variable 'connexion' could be declared final
+src/dao/ClientDaoImplementation.java:55:	Avoid variables with short names like ps
+src/dao/ClientDaoImplementation.java:55:	Local variable 'ps' could be declared final
+src/dao/ClientDaoImplementation.java:55:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:56:	Comment is too large: Line too long
+src/dao/ClientDaoImplementation.java:57:	Comment is too large: Line too long
+src/dao/ClientDaoImplementation.java:65:	Ensure that resources like this ResultSet object are closed after use
+src/dao/ClientDaoImplementation.java:65:	Local variable 'resultat' could be declared final
+src/dao/ClientDaoImplementation.java:65:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:69:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:70:	Avoid instantiating new objects inside loops
+src/dao/ClientDaoImplementation.java:70:	Local variable 'client' could be declared final
+src/dao/ClientDaoImplementation.java:71:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:72:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:73:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:74:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:78:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:79:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:82:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:88:	Comment is too large: Too many lines
+src/dao/ClientDaoImplementation.java:126:	Avoid printStackTrace(); use a logger call instead.
+src/dao/ClientDaoImplementation.java:132:	Avoid variables with short names like id
+src/dao/ClientDaoImplementation.java:132:	Parameter 'id' is not assigned and could be declared final
+src/dao/ClientDaoImplementation.java:132:	publicMethodCommentRequirement Required
+src/dao/ClientDaoImplementation.java:133:	Found 'DD'-anomaly for variable 'client' (lines '133'-'141').
+src/dao/ClientDaoImplementation.java:134:	Ensure that resources like this Connection object are closed after use
+src/dao/ClientDaoImplementation.java:134:	Local variable 'connexion' could be declared final
+src/dao/ClientDaoImplementation.java:136:	Avoid variables with short names like ps
+src/dao/ClientDaoImplementation.java:136:	Local variable 'ps' could be declared final
+src/dao/ClientDaoImplementation.java:136:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:138:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:139:	Ensure that resources like this ResultSet object are closed after use
+src/dao/ClientDaoImplementation.java:139:	Local variable 'resultat' could be declared final
+src/dao/ClientDaoImplementation.java:139:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:140:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:143:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:144:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:145:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:146:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:147:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:148:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:149:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:150:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:151:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:152:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:153:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:154:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:155:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:160:	Avoid printStackTrace(); use a logger call instead.
+src/dao/ClientDaoImplementation.java:166:	Avoid variables with short names like id
+src/dao/ClientDaoImplementation.java:166:	Parameter 'id' is not assigned and could be declared final
+src/dao/ClientDaoImplementation.java:166:	publicMethodCommentRequirement Required
+src/dao/ClientDaoImplementation.java:172:	Parameter 'client' is not assigned and could be declared final
+src/dao/ClientDaoImplementation.java:172:	publicMethodCommentRequirement Required
+src/dao/ClientDaoImplementation.java:173:	Ensure that resources like this Connection object are closed after use
+src/dao/ClientDaoImplementation.java:173:	Local variable 'connexion' could be declared final
+src/dao/ClientDaoImplementation.java:175:	Avoid variables with short names like ps
+src/dao/ClientDaoImplementation.java:175:	Local variable 'ps' could be declared final
+src/dao/ClientDaoImplementation.java:175:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:180:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:181:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:182:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:183:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:184:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:185:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:186:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:187:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:188:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:189:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:190:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:191:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:192:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:193:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:195:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:199:	Avoid printStackTrace(); use a logger call instead.
+src/dao/ClientDaoImplementation.java:205:	Avoid variables with short names like id
+src/dao/ClientDaoImplementation.java:205:	Parameter 'id' is not assigned and could be declared final
+src/dao/ClientDaoImplementation.java:205:	publicMethodCommentRequirement Required
+src/dao/ClientDaoImplementation.java:206:	Ensure that resources like this Connection object are closed after use
+src/dao/ClientDaoImplementation.java:206:	Local variable 'connexion' could be declared final
+src/dao/ClientDaoImplementation.java:208:	Avoid variables with short names like ps
+src/dao/ClientDaoImplementation.java:208:	Local variable 'ps' could be declared final
+src/dao/ClientDaoImplementation.java:208:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:209:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:210:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:211:	Potential violation of Law of Demeter (object not created locally)
+src/dao/ClientDaoImplementation.java:215:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CompteDaoImplementation.java:15:	Each class should declare at least one constructor
+src/dao/CompteDaoImplementation.java:15:	headerCommentRequirement Required
+src/dao/CompteDaoImplementation.java:18:	Avoid declaring a variable if it is unreferenced before a possible exit point.
+src/dao/CompteDaoImplementation.java:18:	Avoid unused local variables such as 'i'.
+src/dao/CompteDaoImplementation.java:18:	Avoid variables with short names like i
+src/dao/CompteDaoImplementation.java:18:	Found 'DU'-anomaly for variable 'i' (lines '19'-'42').
+src/dao/CompteDaoImplementation.java:18:	Local variable 'i' could be declared final
+src/dao/CompteDaoImplementation.java:18:	Parameter 'cpte' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:18:	publicMethodCommentRequirement Required
+src/dao/CompteDaoImplementation.java:19:	Ensure that resources like this Connection object are closed after use
+src/dao/CompteDaoImplementation.java:19:	Local variable 'connexion' could be declared final
+src/dao/CompteDaoImplementation.java:21:	Avoid variables with short names like ps
+src/dao/CompteDaoImplementation.java:21:	Local variable 'ps' could be declared final
+src/dao/CompteDaoImplementation.java:21:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:23:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:24:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:25:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:26:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:27:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:28:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:29:	Local variable 'ps2' could be declared final
+src/dao/CompteDaoImplementation.java:29:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:30:	Avoid variables with short names like rs
+src/dao/CompteDaoImplementation.java:30:	Ensure that resources like this ResultSet object are closed after use
+src/dao/CompteDaoImplementation.java:30:	Local variable 'rs' could be declared final
+src/dao/CompteDaoImplementation.java:30:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:32:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:34:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:38:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CompteDaoImplementation.java:44:	Parameter 'motCle' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:44:	publicMethodCommentRequirement Required
+src/dao/CompteDaoImplementation.java:45:	Local variable 'listCompte' could be declared final
+src/dao/CompteDaoImplementation.java:46:	Ensure that resources like this Connection object are closed after use
+src/dao/CompteDaoImplementation.java:46:	Local variable 'connexion' could be declared final
+src/dao/CompteDaoImplementation.java:48:	Avoid variables with short names like ps
+src/dao/CompteDaoImplementation.java:48:	Local variable 'ps' could be declared final
+src/dao/CompteDaoImplementation.java:48:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:50:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:51:	Ensure that resources like this ResultSet object are closed after use
+src/dao/CompteDaoImplementation.java:51:	Local variable 'resultat' could be declared final
+src/dao/CompteDaoImplementation.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:53:	Avoid instantiating new objects inside loops
+src/dao/CompteDaoImplementation.java:53:	Local variable 'cpte' could be declared final
+src/dao/CompteDaoImplementation.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:54:	The String literal "ID_COMPTE" appears 4 times in this file; the first occurrence is on line 55
+src/dao/CompteDaoImplementation.java:55:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:55:	The String literal "TYPE" appears 4 times in this file; the first occurrence is on line 56
+src/dao/CompteDaoImplementation.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:56:	The String literal "DATE_CREATION" appears 4 times in this file; the first occurrence is on line 57
+src/dao/CompteDaoImplementation.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:57:	The String literal "ID_CLIENT" appears 4 times in this file; the first occurrence is on line 58
+src/dao/CompteDaoImplementation.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:58:	The String literal "ID_GESTIONNAIRE" appears 4 times in this file; the first occurrence is on line 59
+src/dao/CompteDaoImplementation.java:59:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:59:	The String literal "SOLDE" appears 4 times in this file; the first occurrence is on line 60
+src/dao/CompteDaoImplementation.java:65:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CompteDaoImplementation.java:71:	Avoid variables with short names like id
+src/dao/CompteDaoImplementation.java:71:	Parameter 'id' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:71:	publicMethodCommentRequirement Required
+src/dao/CompteDaoImplementation.java:72:	Found 'DD'-anomaly for variable 'cpte' (lines '73'-'81').
+src/dao/CompteDaoImplementation.java:73:	Ensure that resources like this Connection object are closed after use
+src/dao/CompteDaoImplementation.java:73:	Local variable 'connexion' could be declared final
+src/dao/CompteDaoImplementation.java:75:	Avoid variables with short names like ps
+src/dao/CompteDaoImplementation.java:75:	Local variable 'ps' could be declared final
+src/dao/CompteDaoImplementation.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:78:	Ensure that resources like this ResultSet object are closed after use
+src/dao/CompteDaoImplementation.java:78:	Local variable 'resultat' could be declared final
+src/dao/CompteDaoImplementation.java:78:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:79:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:82:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:84:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:85:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:86:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:91:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CompteDaoImplementation.java:97:	Parameter 'idClient' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:97:	publicMethodCommentRequirement Required
+src/dao/CompteDaoImplementation.java:98:	Found 'DD'-anomaly for variable 'cpte' (lines '99'-'107').
+src/dao/CompteDaoImplementation.java:99:	Ensure that resources like this Connection object are closed after use
+src/dao/CompteDaoImplementation.java:99:	Local variable 'connexion' could be declared final
+src/dao/CompteDaoImplementation.java:101:	Avoid variables with short names like ps
+src/dao/CompteDaoImplementation.java:101:	Local variable 'ps' could be declared final
+src/dao/CompteDaoImplementation.java:101:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:103:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:104:	Ensure that resources like this ResultSet object are closed after use
+src/dao/CompteDaoImplementation.java:104:	Local variable 'resultat' could be declared final
+src/dao/CompteDaoImplementation.java:104:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:105:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:107:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:108:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:109:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:110:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:111:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:112:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:117:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CompteDaoImplementation.java:123:	Avoid variables with short names like id
+src/dao/CompteDaoImplementation.java:123:	Parameter 'id' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:123:	publicMethodCommentRequirement Required
+src/dao/CompteDaoImplementation.java:124:	Local variable 'compte' could be declared final
+src/dao/CompteDaoImplementation.java:125:	Ensure that resources like this Connection object are closed after use
+src/dao/CompteDaoImplementation.java:125:	Local variable 'connexion' could be declared final
+src/dao/CompteDaoImplementation.java:127:	Avoid variables with short names like ps
+src/dao/CompteDaoImplementation.java:127:	Local variable 'ps' could be declared final
+src/dao/CompteDaoImplementation.java:127:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:129:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:130:	Ensure that resources like this ResultSet object are closed after use
+src/dao/CompteDaoImplementation.java:130:	Local variable 'resultat' could be declared final
+src/dao/CompteDaoImplementation.java:130:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:131:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:132:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:133:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:134:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:135:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:136:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:137:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:142:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CompteDaoImplementation.java:148:	Parameter 'cpte' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:148:	publicMethodCommentRequirement Required
+src/dao/CompteDaoImplementation.java:149:	Ensure that resources like this Connection object are closed after use
+src/dao/CompteDaoImplementation.java:149:	Local variable 'connexion' could be declared final
+src/dao/CompteDaoImplementation.java:151:	Avoid variables with short names like ps
+src/dao/CompteDaoImplementation.java:151:	Local variable 'ps' could be declared final
+src/dao/CompteDaoImplementation.java:151:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:152:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:153:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:154:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:155:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:156:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:157:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:158:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:159:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:163:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CompteDaoImplementation.java:169:	Avoid variables with short names like id
+src/dao/CompteDaoImplementation.java:169:	Parameter 'id' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:169:	publicMethodCommentRequirement Required
+src/dao/CompteDaoImplementation.java:170:	Ensure that resources like this Connection object are closed after use
+src/dao/CompteDaoImplementation.java:170:	Local variable 'connexion' could be declared final
+src/dao/CompteDaoImplementation.java:172:	Avoid variables with short names like ps
+src/dao/CompteDaoImplementation.java:172:	Local variable 'ps' could be declared final
+src/dao/CompteDaoImplementation.java:172:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:173:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:174:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:175:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:179:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CompteDaoImplementation.java:185:	Avoid reassigning parameters such as 'date'
+src/dao/CompteDaoImplementation.java:185:	Avoid variables with short names like id
+src/dao/CompteDaoImplementation.java:185:	Parameter 'id' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:185:	Parameter 'montant' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:185:	publicMethodCommentRequirement Required
+src/dao/CompteDaoImplementation.java:187:	Local variable 'cpte' could be declared final
+src/dao/CompteDaoImplementation.java:189:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:189:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:191:	Local variable 'date1' could be declared final
+src/dao/CompteDaoImplementation.java:193:	Local variable 'operation' could be declared final
+src/dao/CompteDaoImplementation.java:193:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:195:	Ensure that resources like this Connection object are closed after use
+src/dao/CompteDaoImplementation.java:195:	Local variable 'connexion' could be declared final
+src/dao/CompteDaoImplementation.java:197:	Avoid variables with short names like ps
+src/dao/CompteDaoImplementation.java:197:	Local variable 'ps' could be declared final
+src/dao/CompteDaoImplementation.java:197:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:198:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:198:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:199:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:199:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:200:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:201:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:205:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CompteDaoImplementation.java:209:	Local variable 'ps2' could be declared final
+src/dao/CompteDaoImplementation.java:209:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:210:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:211:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:212:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:213:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:214:	Local variable 'ps3' could be declared final
+src/dao/CompteDaoImplementation.java:214:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:215:	Avoid variables with short names like rs
+src/dao/CompteDaoImplementation.java:215:	Ensure that resources like this ResultSet object are closed after use
+src/dao/CompteDaoImplementation.java:215:	Local variable 'rs' could be declared final
+src/dao/CompteDaoImplementation.java:215:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:216:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:217:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:219:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:223:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CompteDaoImplementation.java:232:	Avoid excessively long variable names like idCompteBeneficiaire
+src/dao/CompteDaoImplementation.java:232:	Avoid reassigning parameters such as 'datePayement'
+src/dao/CompteDaoImplementation.java:232:	Parameter 'idCompteBeneficiaire' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:232:	Parameter 'idComptePayeur' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:232:	Parameter 'montant' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:232:	Parameter 'typePayement' is not assigned and could be declared final
+src/dao/CompteDaoImplementation.java:232:	publicMethodCommentRequirement Required
+src/dao/CompteDaoImplementation.java:234:	Local variable 'cptePayeur' could be declared final
+src/dao/CompteDaoImplementation.java:235:	Local variable 'cpteBeneficiaire' could be declared final
+src/dao/CompteDaoImplementation.java:237:	Local variable 'payement' could be declared final
+src/dao/CompteDaoImplementation.java:239:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:241:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:241:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:242:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:242:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:252:	Ensure that resources like this Connection object are closed after use
+src/dao/CompteDaoImplementation.java:252:	Local variable 'connexion' could be declared final
+src/dao/CompteDaoImplementation.java:254:	Avoid variables with short names like ps
+src/dao/CompteDaoImplementation.java:254:	Local variable 'ps' could be declared final
+src/dao/CompteDaoImplementation.java:254:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:255:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:255:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:256:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:256:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:257:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:258:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:262:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CompteDaoImplementation.java:267:	Local variable 'ps2' could be declared final
+src/dao/CompteDaoImplementation.java:267:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:268:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:268:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:269:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:269:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:270:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:271:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:275:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CompteDaoImplementation.java:280:	Local variable 'ps3' could be declared final
+src/dao/CompteDaoImplementation.java:280:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:281:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:282:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:283:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:284:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:285:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:286:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:287:	Local variable 'ps4' could be declared final
+src/dao/CompteDaoImplementation.java:287:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:288:	Avoid variables with short names like rs
+src/dao/CompteDaoImplementation.java:288:	Ensure that resources like this ResultSet object are closed after use
+src/dao/CompteDaoImplementation.java:288:	Local variable 'rs' could be declared final
+src/dao/CompteDaoImplementation.java:288:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:289:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:290:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:292:	Potential violation of Law of Demeter (object not created locally)
+src/dao/CompteDaoImplementation.java:296:	Avoid printStackTrace(); use a logger call instead.
+src/dao/CreationClientTest.java:9:	Each class should declare at least one constructor
+src/dao/CreationClientTest.java:9:	headerCommentRequirement Required
+src/dao/CreationClientTest.java:12:	publicMethodCommentRequirement Required
+src/dao/CreationClientTest.java:13:	Local variable 'dao1' could be declared final
+src/dao/CreationClientTest.java:14:	Local variable 'client1' could be declared final
+src/dao/CreationCompteTest.java:9:	Each class should declare at least one constructor
+src/dao/CreationCompteTest.java:9:	headerCommentRequirement Required
+src/dao/CreationCompteTest.java:12:	publicMethodCommentRequirement Required
+src/dao/CreationCompteTest.java:13:	Local variable 'dao' could be declared final
+src/dao/CreationCompteTest.java:14:	Local variable 'cpte1' could be declared final
+src/dao/CrediterCompteTest.java:11:	Each class should declare at least one constructor
+src/dao/CrediterCompteTest.java:11:	headerCommentRequirement Required
+src/dao/CrediterCompteTest.java:14:	publicMethodCommentRequirement Required
+src/dao/CrediterCompteTest.java:15:	Local variable 'dao' could be declared final
+src/dao/CrediterCompteTest.java:16:	Found 'DD'-anomaly for variable 'cpte1' (lines '16'-'17').
+src/dao/IClientDao.java:8:	headerCommentRequirement Required
+src/dao/IClientDao.java:10:	Avoid modifiers which are implied by the context
+src/dao/IClientDao.java:10:	publicMethodCommentRequirement Required
+src/dao/IClientDao.java:11:	Avoid modifiers which are implied by the context
+src/dao/IClientDao.java:11:	publicMethodCommentRequirement Required
+src/dao/IClientDao.java:12:	Avoid modifiers which are implied by the context
+src/dao/IClientDao.java:12:	Avoid variables with short names like id
+src/dao/IClientDao.java:12:	publicMethodCommentRequirement Required
+src/dao/IClientDao.java:13:	Avoid modifiers which are implied by the context
+src/dao/IClientDao.java:13:	publicMethodCommentRequirement Required
+src/dao/IClientDao.java:14:	Avoid modifiers which are implied by the context
+src/dao/IClientDao.java:14:	Avoid variables with short names like id
+src/dao/IClientDao.java:14:	publicMethodCommentRequirement Required
+src/dao/IClientDao.java:15:	Avoid modifiers which are implied by the context
+src/dao/IClientDao.java:15:	Avoid variables with short names like id
+src/dao/IClientDao.java:15:	publicMethodCommentRequirement Required
+src/dao/ICompteDao.java:9:	headerCommentRequirement Required
+src/dao/ICompteDao.java:11:	Avoid modifiers which are implied by the context
+src/dao/ICompteDao.java:11:	publicMethodCommentRequirement Required
+src/dao/ICompteDao.java:12:	Avoid modifiers which are implied by the context
+src/dao/ICompteDao.java:12:	publicMethodCommentRequirement Required
+src/dao/ICompteDao.java:13:	Avoid modifiers which are implied by the context
+src/dao/ICompteDao.java:13:	Avoid variables with short names like id
+src/dao/ICompteDao.java:13:	publicMethodCommentRequirement Required
+src/dao/ICompteDao.java:14:	Avoid modifiers which are implied by the context
+src/dao/ICompteDao.java:14:	publicMethodCommentRequirement Required
+src/dao/ICompteDao.java:15:	Avoid modifiers which are implied by the context
+src/dao/ICompteDao.java:15:	Avoid variables with short names like id
+src/dao/ICompteDao.java:15:	publicMethodCommentRequirement Required
+src/dao/ICompteDao.java:16:	Avoid modifiers which are implied by the context
+src/dao/ICompteDao.java:16:	Avoid variables with short names like id
+src/dao/ICompteDao.java:16:	publicMethodCommentRequirement Required
+src/dao/ICompteDao.java:17:	Avoid modifiers which are implied by the context
+src/dao/ICompteDao.java:17:	Avoid variables with short names like id
+src/dao/ICompteDao.java:17:	publicMethodCommentRequirement Required
+src/dao/ICompteDao.java:18:	Avoid modifiers which are implied by the context
+src/dao/ICompteDao.java:18:	Method names should not start with capital letters
+src/dao/ICompteDao.java:18:	publicMethodCommentRequirement Required
+src/dao/ICompteDao.java:20:	Avoid modifiers which are implied by the context
+src/dao/ICompteDao.java:20:	publicMethodCommentRequirement Required
+src/dao/IPayementDao.java:7:	headerCommentRequirement Required
+src/dao/IPayementDao.java:10:	Avoid modifiers which are implied by the context
+src/dao/IPayementDao.java:10:	publicMethodCommentRequirement Required
+src/dao/IPayementDao.java:12:	Avoid modifiers which are implied by the context
+src/dao/IPayementDao.java:12:	publicMethodCommentRequirement Required
+src/dao/IPayementDao.java:13:	Avoid modifiers which are implied by the context
+src/dao/IPayementDao.java:13:	Avoid variables with short names like id
+src/dao/IPayementDao.java:13:	publicMethodCommentRequirement Required
+src/dao/IPayementDao.java:15:	Avoid modifiers which are implied by the context
+src/dao/IPayementDao.java:15:	Avoid variables with short names like id
+src/dao/IPayementDao.java:15:	publicMethodCommentRequirement Required
+src/dao/IUtilisateurDao.java:8:	headerCommentRequirement Required
+src/dao/IUtilisateurDao.java:10:	Avoid modifiers which are implied by the context
+src/dao/IUtilisateurDao.java:10:	publicMethodCommentRequirement Required
+src/dao/IUtilisateurDao.java:11:	Avoid modifiers which are implied by the context
+src/dao/IUtilisateurDao.java:11:	publicMethodCommentRequirement Required
+src/dao/IUtilisateurDao.java:12:	Avoid modifiers which are implied by the context
+src/dao/IUtilisateurDao.java:12:	Avoid variables with short names like id
+src/dao/IUtilisateurDao.java:12:	publicMethodCommentRequirement Required
+src/dao/IUtilisateurDao.java:13:	Avoid modifiers which are implied by the context
+src/dao/IUtilisateurDao.java:13:	publicMethodCommentRequirement Required
+src/dao/IUtilisateurDao.java:14:	Avoid modifiers which are implied by the context
+src/dao/IUtilisateurDao.java:14:	Avoid variables with short names like id
+src/dao/IUtilisateurDao.java:14:	publicMethodCommentRequirement Required
+src/dao/IUtilisateurDao.java:15:	Avoid modifiers which are implied by the context
+src/dao/IUtilisateurDao.java:15:	publicMethodCommentRequirement Required
+src/dao/IUtilisateurDao.java:16:	Avoid modifiers which are implied by the context
+src/dao/IUtilisateurDao.java:16:	Avoid variables with short names like id
+src/dao/IUtilisateurDao.java:16:	publicMethodCommentRequirement Required
+src/dao/PayementDaoImplementation.java:13:	Each class should declare at least one constructor
+src/dao/PayementDaoImplementation.java:13:	headerCommentRequirement Required
+src/dao/PayementDaoImplementation.java:18:	Parameter 'iDCompte' is not assigned and could be declared final
+src/dao/PayementDaoImplementation.java:18:	Parameter 'motCle' is not assigned and could be declared final
+src/dao/PayementDaoImplementation.java:18:	publicMethodCommentRequirement Required
+src/dao/PayementDaoImplementation.java:19:	Local variable 'listPayement' could be declared final
+src/dao/PayementDaoImplementation.java:20:	Ensure that resources like this Connection object are closed after use
+src/dao/PayementDaoImplementation.java:20:	Local variable 'connexion' could be declared final
+src/dao/PayementDaoImplementation.java:22:	Avoid variables with short names like ps
+src/dao/PayementDaoImplementation.java:22:	Local variable 'ps' could be declared final
+src/dao/PayementDaoImplementation.java:22:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:24:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:25:	Ensure that resources like this ResultSet object are closed after use
+src/dao/PayementDaoImplementation.java:25:	Local variable 'resultat' could be declared final
+src/dao/PayementDaoImplementation.java:25:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:26:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:27:	Avoid instantiating new objects inside loops
+src/dao/PayementDaoImplementation.java:27:	Local variable 'payement' could be declared final
+src/dao/PayementDaoImplementation.java:28:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:28:	The String literal "ID_PAYEMENT" appears 4 times in this file; the first occurrence is on line 28
+src/dao/PayementDaoImplementation.java:29:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:29:	The String literal "TYPE_PAYEMENT" appears 4 times in this file; the first occurrence is on line 29
+src/dao/PayementDaoImplementation.java:30:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:31:	The String literal "ID_CPTE_PAYEUR" appears 4 times in this file; the first occurrence is on line 31
+src/dao/PayementDaoImplementation.java:32:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:32:	The String literal "ID_CPTE_BENEF" appears 4 times in this file; the first occurrence is on line 32
+src/dao/PayementDaoImplementation.java:33:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:33:	The String literal "MONTANT" appears 4 times in this file; the first occurrence is on line 33
+src/dao/PayementDaoImplementation.java:39:	Avoid printStackTrace(); use a logger call instead.
+src/dao/PayementDaoImplementation.java:46:	Parameter 'iDCompte' is not assigned and could be declared final
+src/dao/PayementDaoImplementation.java:46:	Parameter 'motCle' is not assigned and could be declared final
+src/dao/PayementDaoImplementation.java:46:	publicMethodCommentRequirement Required
+src/dao/PayementDaoImplementation.java:47:	Local variable 'listPayement' could be declared final
+src/dao/PayementDaoImplementation.java:48:	Ensure that resources like this Connection object are closed after use
+src/dao/PayementDaoImplementation.java:48:	Local variable 'connexion' could be declared final
+src/dao/PayementDaoImplementation.java:50:	Avoid variables with short names like ps
+src/dao/PayementDaoImplementation.java:50:	Local variable 'ps' could be declared final
+src/dao/PayementDaoImplementation.java:50:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:53:	Ensure that resources like this ResultSet object are closed after use
+src/dao/PayementDaoImplementation.java:53:	Local variable 'resultat' could be declared final
+src/dao/PayementDaoImplementation.java:53:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:55:	Avoid instantiating new objects inside loops
+src/dao/PayementDaoImplementation.java:55:	Local variable 'payement' could be declared final
+src/dao/PayementDaoImplementation.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:57:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:59:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:60:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:61:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:67:	Avoid printStackTrace(); use a logger call instead.
+src/dao/PayementDaoImplementation.java:73:	Avoid variables with short names like id
+src/dao/PayementDaoImplementation.java:73:	Parameter 'id' is not assigned and could be declared final
+src/dao/PayementDaoImplementation.java:73:	publicMethodCommentRequirement Required
+src/dao/PayementDaoImplementation.java:74:	Found 'DD'-anomaly for variable 'payement' (lines '74'-'82').
+src/dao/PayementDaoImplementation.java:75:	Ensure that resources like this Connection object are closed after use
+src/dao/PayementDaoImplementation.java:75:	Local variable 'connexion' could be declared final
+src/dao/PayementDaoImplementation.java:77:	Avoid variables with short names like ps
+src/dao/PayementDaoImplementation.java:77:	Local variable 'ps' could be declared final
+src/dao/PayementDaoImplementation.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:79:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:80:	Ensure that resources like this ResultSet object are closed after use
+src/dao/PayementDaoImplementation.java:80:	Local variable 'resultat' could be declared final
+src/dao/PayementDaoImplementation.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:84:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:85:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:86:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:87:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:88:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:93:	Avoid printStackTrace(); use a logger call instead.
+src/dao/PayementDaoImplementation.java:100:	Avoid variables with short names like id
+src/dao/PayementDaoImplementation.java:100:	Parameter 'id' is not assigned and could be declared final
+src/dao/PayementDaoImplementation.java:100:	publicMethodCommentRequirement Required
+src/dao/PayementDaoImplementation.java:101:	Local variable 'payement' could be declared final
+src/dao/PayementDaoImplementation.java:102:	Ensure that resources like this Connection object are closed after use
+src/dao/PayementDaoImplementation.java:102:	Local variable 'connexion' could be declared final
+src/dao/PayementDaoImplementation.java:104:	Avoid variables with short names like ps
+src/dao/PayementDaoImplementation.java:104:	Local variable 'ps' could be declared final
+src/dao/PayementDaoImplementation.java:104:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:106:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:107:	Ensure that resources like this ResultSet object are closed after use
+src/dao/PayementDaoImplementation.java:107:	Local variable 'resultat' could be declared final
+src/dao/PayementDaoImplementation.java:107:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:108:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:109:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:110:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:111:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:112:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:113:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:114:	Potential violation of Law of Demeter (object not created locally)
+src/dao/PayementDaoImplementation.java:119:	Avoid printStackTrace(); use a logger call instead.
+src/dao/PayementTest.java:12:	Each class should declare at least one constructor
+src/dao/PayementTest.java:12:	headerCommentRequirement Required
+src/dao/PayementTest.java:15:	publicMethodCommentRequirement Required
+src/dao/PayementTest.java:16:	Found 'DD'-anomaly for variable 'payement' (lines '16'-'21').
+src/dao/PayementTest.java:17:	Local variable 'dao' could be declared final
+src/dao/PayementTest.java:18:	Local variable 'cpte1' could be declared final
+src/dao/PayementTest.java:19:	Local variable 'cpte2' could be declared final
+src/dao/SingletonConnexion.java:7:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/dao/SingletonConnexion.java:7:	headerCommentRequirement Required
+src/dao/SingletonConnexion.java:9:	fieldCommentRequirement Required
+src/dao/SingletonConnexion.java:18:	Avoid printStackTrace(); use a logger call instead.
+src/dao/SingletonConnexion.java:21:	Avoid printStackTrace(); use a logger call instead.
+src/dao/SingletonConnexion.java:26:	publicMethodCommentRequirement Required
+src/dao/TestDao.java:3:	Avoid unused imports such as 'java.sql.Connection'
+src/dao/TestDao.java:4:	Avoid unused imports such as 'java.sql.PreparedStatement'
+src/dao/TestDao.java:5:	Avoid unused imports such as 'java.sql.ResultSet'
+src/dao/TestDao.java:6:	Avoid unused imports such as 'java.sql.SQLException'
+src/dao/TestDao.java:7:	Avoid unused imports such as 'java.text.NumberFormat'
+src/dao/TestDao.java:9:	Avoid unused imports such as 'java.util.List'
+src/dao/TestDao.java:11:	Avoid unused imports such as 'metier.entities.Client'
+src/dao/TestDao.java:14:	Avoid unused imports such as 'metier.entities.Utilisateur'
+src/dao/TestDao.java:16:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/dao/TestDao.java:16:	headerCommentRequirement Required
+src/dao/TestDao.java:18:	Avoid really long methods.
+src/dao/TestDao.java:18:	Parameter 'args' is not assigned and could be declared final
+src/dao/TestDao.java:18:	publicMethodCommentRequirement Required
+src/dao/TestDao.java:19:	Found 'DD'-anomaly for variable 'payement' (lines '19'-'36').
+src/dao/TestDao.java:20:	Local variable 'dao' could be declared final
+src/dao/TestDao.java:21:	Local variable 'cpte1' could be declared final
+src/dao/TestDao.java:22:	Local variable 'cpte2' could be declared final
+src/dao/TestDao.java:23:	Comment is too large: Line too long
+src/dao/TestDao.java:23:	Comment is too large: Too many lines
+src/dao/TestDao.java:33:	System.out.println is used
+src/dao/TestDao.java:34:	System.out.println is used
+src/dao/TestDao.java:40:	System.out.println is used
+src/dao/TestDao.java:48:	Comment is too large: Too many lines
+src/dao/TestDao.java:49:	Comment is too large: Line too long
+src/dao/TestDao.java:51:	Comment is too large: Line too long
+src/dao/TestDao.java:53:	Comment is too large: Line too long
+src/dao/TestDao.java:55:	Comment is too large: Line too long
+src/dao/TestDao.java:57:	Comment is too large: Line too long
+src/dao/TestDao.java:59:	Comment is too large: Too many lines
+src/dao/TestDao.java:61:	Comment is too large: Line too long
+src/dao/TestDao.java:80:	Comment is too large: Line too long
+src/dao/TestDao.java:82:	Comment is too large: Line too long
+src/dao/TestDao.java:83:	Comment is too large: Line too long
+src/dao/UtilisateurDaoImplementation.java:12:	Each class should declare at least one constructor
+src/dao/UtilisateurDaoImplementation.java:12:	headerCommentRequirement Required
+src/dao/UtilisateurDaoImplementation.java:15:	Parameter 'user' is not assigned and could be declared final
+src/dao/UtilisateurDaoImplementation.java:15:	publicMethodCommentRequirement Required
+src/dao/UtilisateurDaoImplementation.java:16:	Ensure that resources like this Connection object are closed after use
+src/dao/UtilisateurDaoImplementation.java:16:	Local variable 'connexion' could be declared final
+src/dao/UtilisateurDaoImplementation.java:18:	Avoid variables with short names like ps
+src/dao/UtilisateurDaoImplementation.java:18:	Local variable 'ps' could be declared final
+src/dao/UtilisateurDaoImplementation.java:18:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:20:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:21:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:22:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:23:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:24:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:25:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:26:	Local variable 'ps2' could be declared final
+src/dao/UtilisateurDaoImplementation.java:26:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:27:	Avoid variables with short names like rs
+src/dao/UtilisateurDaoImplementation.java:27:	Ensure that resources like this ResultSet object are closed after use
+src/dao/UtilisateurDaoImplementation.java:27:	Local variable 'rs' could be declared final
+src/dao/UtilisateurDaoImplementation.java:27:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:28:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:29:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:35:	Avoid printStackTrace(); use a logger call instead.
+src/dao/UtilisateurDaoImplementation.java:41:	Parameter 'motCle' is not assigned and could be declared final
+src/dao/UtilisateurDaoImplementation.java:41:	publicMethodCommentRequirement Required
+src/dao/UtilisateurDaoImplementation.java:42:	Local variable 'listUtilisateur' could be declared final
+src/dao/UtilisateurDaoImplementation.java:43:	Ensure that resources like this Connection object are closed after use
+src/dao/UtilisateurDaoImplementation.java:43:	Local variable 'connexion' could be declared final
+src/dao/UtilisateurDaoImplementation.java:45:	Avoid variables with short names like ps
+src/dao/UtilisateurDaoImplementation.java:45:	Local variable 'ps' could be declared final
+src/dao/UtilisateurDaoImplementation.java:45:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:47:	Ensure that resources like this ResultSet object are closed after use
+src/dao/UtilisateurDaoImplementation.java:47:	Local variable 'resultat' could be declared final
+src/dao/UtilisateurDaoImplementation.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:49:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:50:	Avoid instantiating new objects inside loops
+src/dao/UtilisateurDaoImplementation.java:50:	Local variable 'user' could be declared final
+src/dao/UtilisateurDaoImplementation.java:51:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:52:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:53:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:54:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:55:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:56:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:63:	Avoid printStackTrace(); use a logger call instead.
+src/dao/UtilisateurDaoImplementation.java:69:	Avoid variables with short names like id
+src/dao/UtilisateurDaoImplementation.java:69:	Parameter 'id' is not assigned and could be declared final
+src/dao/UtilisateurDaoImplementation.java:69:	publicMethodCommentRequirement Required
+src/dao/UtilisateurDaoImplementation.java:70:	Found 'DD'-anomaly for variable 'user' (lines '70'-'78').
+src/dao/UtilisateurDaoImplementation.java:71:	Ensure that resources like this Connection object are closed after use
+src/dao/UtilisateurDaoImplementation.java:71:	Local variable 'connexion' could be declared final
+src/dao/UtilisateurDaoImplementation.java:73:	Avoid variables with short names like ps
+src/dao/UtilisateurDaoImplementation.java:73:	Local variable 'ps' could be declared final
+src/dao/UtilisateurDaoImplementation.java:73:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:75:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:76:	Ensure that resources like this ResultSet object are closed after use
+src/dao/UtilisateurDaoImplementation.java:76:	Local variable 'resultat' could be declared final
+src/dao/UtilisateurDaoImplementation.java:76:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:77:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:80:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:81:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:82:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:84:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:85:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:91:	Avoid printStackTrace(); use a logger call instead.
+src/dao/UtilisateurDaoImplementation.java:98:	Parameter 'user' is not assigned and could be declared final
+src/dao/UtilisateurDaoImplementation.java:98:	publicMethodCommentRequirement Required
+src/dao/UtilisateurDaoImplementation.java:99:	Ensure that resources like this Connection object are closed after use
+src/dao/UtilisateurDaoImplementation.java:99:	Local variable 'connexion' could be declared final
+src/dao/UtilisateurDaoImplementation.java:101:	Avoid variables with short names like ps
+src/dao/UtilisateurDaoImplementation.java:101:	Local variable 'ps' could be declared final
+src/dao/UtilisateurDaoImplementation.java:101:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:105:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:106:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:107:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:108:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:109:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:110:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:111:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:113:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:117:	Avoid printStackTrace(); use a logger call instead.
+src/dao/UtilisateurDaoImplementation.java:123:	Avoid variables with short names like id
+src/dao/UtilisateurDaoImplementation.java:123:	Parameter 'id' is not assigned and could be declared final
+src/dao/UtilisateurDaoImplementation.java:123:	publicMethodCommentRequirement Required
+src/dao/UtilisateurDaoImplementation.java:124:	Ensure that resources like this Connection object are closed after use
+src/dao/UtilisateurDaoImplementation.java:124:	Local variable 'connexion' could be declared final
+src/dao/UtilisateurDaoImplementation.java:126:	Avoid variables with short names like ps
+src/dao/UtilisateurDaoImplementation.java:126:	Local variable 'ps' could be declared final
+src/dao/UtilisateurDaoImplementation.java:126:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:127:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:128:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:129:	Potential violation of Law of Demeter (object not created locally)
+src/dao/UtilisateurDaoImplementation.java:133:	Avoid printStackTrace(); use a logger call instead.
+src/dao/UtilisateurDaoImplementation.java:139:	Avoid variables with short names like id
+src/dao/UtilisateurDaoImplementation.java:139:	Parameter 'id' is not assigned and could be declared final
+src/dao/UtilisateurDaoImplementation.java:139:	publicMethodCommentRequirement Required
+src/dao/UtilisateurDaoImplementation.java:145:	Parameter 'email' is not assigned and could be declared final
+src/dao/UtilisateurDaoImplementation.java:145:	Parameter 'motDePasse' is not assigned and could be declared final
+src/dao/UtilisateurDaoImplementation.java:145:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:5:	Classes implementing Serializable should set a serialVersionUID
+src/metier/entities/Abonnements.java:5:	headerCommentRequirement Required
+src/metier/entities/Abonnements.java:7:	Avoid variables with short names like id
+src/metier/entities/Abonnements.java:7:	fieldCommentRequirement Required
+src/metier/entities/Abonnements.java:8:	fieldCommentRequirement Required
+src/metier/entities/Abonnements.java:9:	fieldCommentRequirement Required
+src/metier/entities/Abonnements.java:10:	fieldCommentRequirement Required
+src/metier/entities/Abonnements.java:11:	fieldCommentRequirement Required
+src/metier/entities/Abonnements.java:12:	fieldCommentRequirement Required
+src/metier/entities/Abonnements.java:13:	fieldCommentRequirement Required
+src/metier/entities/Abonnements.java:16:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:22:	Parameter 'compte' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:22:	Parameter 'dateDebut' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:22:	Parameter 'dateFin' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:22:	Parameter 'libelle' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:22:	Parameter 'montant' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:22:	Parameter 'type' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:22:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:33:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:38:	Avoid variables with short names like id
+src/metier/entities/Abonnements.java:38:	Parameter 'id' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:38:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:43:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:48:	Parameter 'libelle' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:48:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:53:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:58:	Parameter 'type' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:58:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:63:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:68:	Parameter 'dateDebut' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:68:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:73:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:78:	Parameter 'dateFin' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:78:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:83:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:88:	Parameter 'montant' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:88:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:93:	publicMethodCommentRequirement Required
+src/metier/entities/Abonnements.java:98:	Parameter 'compte' is not assigned and could be declared final
+src/metier/entities/Abonnements.java:98:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:6:	Classes implementing Serializable should set a serialVersionUID
+src/metier/entities/Client.java:6:	headerCommentRequirement Required
+src/metier/entities/Client.java:8:	Avoid variables with short names like id
+src/metier/entities/Client.java:8:	fieldCommentRequirement Required
+src/metier/entities/Client.java:9:	fieldCommentRequirement Required
+src/metier/entities/Client.java:10:	fieldCommentRequirement Required
+src/metier/entities/Client.java:11:	fieldCommentRequirement Required
+src/metier/entities/Client.java:12:	fieldCommentRequirement Required
+src/metier/entities/Client.java:13:	fieldCommentRequirement Required
+src/metier/entities/Client.java:14:	fieldCommentRequirement Required
+src/metier/entities/Client.java:16:	fieldCommentRequirement Required
+src/metier/entities/Client.java:17:	fieldCommentRequirement Required
+src/metier/entities/Client.java:18:	fieldCommentRequirement Required
+src/metier/entities/Client.java:19:	fieldCommentRequirement Required
+src/metier/entities/Client.java:20:	fieldCommentRequirement Required
+src/metier/entities/Client.java:21:	fieldCommentRequirement Required
+src/metier/entities/Client.java:23:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:27:	Avoid variables with short names like id
+src/metier/entities/Client.java:27:	Parameter 'id' is not assigned and could be declared final
+src/metier/entities/Client.java:27:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:31:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:35:	Parameter 'civilite' is not assigned and could be declared final
+src/metier/entities/Client.java:35:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:39:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:43:	Parameter 'nom' is not assigned and could be declared final
+src/metier/entities/Client.java:43:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:47:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:51:	Parameter 'prenom' is not assigned and could be declared final
+src/metier/entities/Client.java:51:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:55:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:59:	Parameter 'dateNaissance' is not assigned and could be declared final
+src/metier/entities/Client.java:59:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:63:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:67:	Parameter 'lieuNaissance' is not assigned and could be declared final
+src/metier/entities/Client.java:67:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:71:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:75:	Parameter 'sexe' is not assigned and could be declared final
+src/metier/entities/Client.java:75:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:79:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:83:	Parameter 'pieceIndentite' is not assigned and could be declared final
+src/metier/entities/Client.java:83:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:87:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:91:	Parameter 'refPieceIdentite' is not assigned and could be declared final
+src/metier/entities/Client.java:91:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:95:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:99:	Parameter 'adresse' is not assigned and could be declared final
+src/metier/entities/Client.java:99:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:103:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:107:	Parameter 'telephone' is not assigned and could be declared final
+src/metier/entities/Client.java:107:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:111:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:115:	Parameter 'email' is not assigned and could be declared final
+src/metier/entities/Client.java:115:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:119:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:123:	Parameter 'type' is not assigned and could be declared final
+src/metier/entities/Client.java:123:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:127:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:134:	Avoid long parameter lists.
+src/metier/entities/Client.java:134:	Parameter 'civilite' is not assigned and could be declared final
+src/metier/entities/Client.java:134:	Parameter 'dateNaissance' is not assigned and could be declared final
+src/metier/entities/Client.java:134:	Parameter 'lieuNaissance' is not assigned and could be declared final
+src/metier/entities/Client.java:134:	Parameter 'nom' is not assigned and could be declared final
+src/metier/entities/Client.java:134:	Parameter 'prenom' is not assigned and could be declared final
+src/metier/entities/Client.java:134:	Parameter 'sexe' is not assigned and could be declared final
+src/metier/entities/Client.java:134:	publicMethodCommentRequirement Required
+src/metier/entities/Client.java:135:	Parameter 'adresse' is not assigned and could be declared final
+src/metier/entities/Client.java:135:	Parameter 'pieceIdentite' is not assigned and could be declared final
+src/metier/entities/Client.java:135:	Parameter 'refPieceIdentite' is not assigned and could be declared final
+src/metier/entities/Client.java:135:	Parameter 'telephone' is not assigned and could be declared final
+src/metier/entities/Client.java:135:	Parameter 'type' is not assigned and could be declared final
+src/metier/entities/Client.java:136:	Parameter 'email' is not assigned and could be declared final
+src/metier/entities/Client.java:153:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:7:	Classes implementing Serializable should set a serialVersionUID
+src/metier/entities/Compte.java:7:	headerCommentRequirement Required
+src/metier/entities/Compte.java:9:	Avoid variables with short names like id
+src/metier/entities/Compte.java:9:	fieldCommentRequirement Required
+src/metier/entities/Compte.java:10:	fieldCommentRequirement Required
+src/metier/entities/Compte.java:11:	fieldCommentRequirement Required
+src/metier/entities/Compte.java:12:	fieldCommentRequirement Required
+src/metier/entities/Compte.java:13:	fieldCommentRequirement Required
+src/metier/entities/Compte.java:14:	fieldCommentRequirement Required
+src/metier/entities/Compte.java:16:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:20:	Parameter 'dateCreation' is not assigned and could be declared final
+src/metier/entities/Compte.java:20:	Parameter 'idClient' is not assigned and could be declared final
+src/metier/entities/Compte.java:20:	Parameter 'idGestionnaire' is not assigned and could be declared final
+src/metier/entities/Compte.java:20:	Parameter 'solde' is not assigned and could be declared final
+src/metier/entities/Compte.java:20:	Parameter 'type' is not assigned and could be declared final
+src/metier/entities/Compte.java:20:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:28:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:31:	Avoid variables with short names like id
+src/metier/entities/Compte.java:31:	Parameter 'id' is not assigned and could be declared final
+src/metier/entities/Compte.java:31:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:34:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:37:	Parameter 'type' is not assigned and could be declared final
+src/metier/entities/Compte.java:37:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:40:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:43:	Parameter 'dateCreation' is not assigned and could be declared final
+src/metier/entities/Compte.java:43:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:46:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:49:	Parameter 'idClient' is not assigned and could be declared final
+src/metier/entities/Compte.java:49:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:52:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:55:	Parameter 'idGestionnaire' is not assigned and could be declared final
+src/metier/entities/Compte.java:55:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:58:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:61:	Parameter 'solde' is not assigned and could be declared final
+src/metier/entities/Compte.java:61:	publicMethodCommentRequirement Required
+src/metier/entities/Compte.java:66:	publicMethodCommentRequirement Required
+src/metier/entities/Operations.java:4:	Avoid unused imports such as 'java.util.Date'
+src/metier/entities/Operations.java:7:	Classes implementing Serializable should set a serialVersionUID
+src/metier/entities/Operations.java:7:	headerCommentRequirement Required
+src/metier/entities/Operations.java:9:	Avoid variables with short names like id
+src/metier/entities/Operations.java:9:	fieldCommentRequirement Required
+src/metier/entities/Operations.java:10:	fieldCommentRequirement Required
+src/metier/entities/Operations.java:11:	fieldCommentRequirement Required
+src/metier/entities/Operations.java:12:	fieldCommentRequirement Required
+src/metier/entities/Operations.java:15:	publicMethodCommentRequirement Required
+src/metier/entities/Operations.java:22:	Parameter 'dateOperation' is not assigned and could be declared final
+src/metier/entities/Operations.java:22:	Parameter 'idCompte' is not assigned and could be declared final
+src/metier/entities/Operations.java:22:	Parameter 'montant' is not assigned and could be declared final
+src/metier/entities/Operations.java:22:	publicMethodCommentRequirement Required
+src/metier/entities/Operations.java:31:	publicMethodCommentRequirement Required
+src/metier/entities/Operations.java:37:	Avoid variables with short names like id
+src/metier/entities/Operations.java:37:	Parameter 'id' is not assigned and could be declared final
+src/metier/entities/Operations.java:37:	publicMethodCommentRequirement Required
+src/metier/entities/Operations.java:43:	publicMethodCommentRequirement Required
+src/metier/entities/Operations.java:49:	Parameter 'dateOperation' is not assigned and could be declared final
+src/metier/entities/Operations.java:49:	publicMethodCommentRequirement Required
+src/metier/entities/Operations.java:55:	publicMethodCommentRequirement Required
+src/metier/entities/Operations.java:61:	Parameter 'montant' is not assigned and could be declared final
+src/metier/entities/Operations.java:61:	publicMethodCommentRequirement Required
+src/metier/entities/Operations.java:67:	publicMethodCommentRequirement Required
+src/metier/entities/Operations.java:73:	Parameter 'idCompte' is not assigned and could be declared final
+src/metier/entities/Operations.java:73:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:5:	Classes implementing Serializable should set a serialVersionUID
+src/metier/entities/Payement.java:5:	headerCommentRequirement Required
+src/metier/entities/Payement.java:7:	Avoid variables with short names like id
+src/metier/entities/Payement.java:7:	fieldCommentRequirement Required
+src/metier/entities/Payement.java:8:	fieldCommentRequirement Required
+src/metier/entities/Payement.java:9:	fieldCommentRequirement Required
+src/metier/entities/Payement.java:10:	fieldCommentRequirement Required
+src/metier/entities/Payement.java:11:	Avoid excessively long variable names like idCompteBeneficiaire
+src/metier/entities/Payement.java:11:	fieldCommentRequirement Required
+src/metier/entities/Payement.java:12:	fieldCommentRequirement Required
+src/metier/entities/Payement.java:14:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:17:	Avoid variables with short names like id
+src/metier/entities/Payement.java:17:	Parameter 'id' is not assigned and could be declared final
+src/metier/entities/Payement.java:17:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:20:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:23:	Parameter 'datePayement' is not assigned and could be declared final
+src/metier/entities/Payement.java:23:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:26:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:29:	Parameter 'montant' is not assigned and could be declared final
+src/metier/entities/Payement.java:29:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:32:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:35:	Parameter 'idComptePayeur' is not assigned and could be declared final
+src/metier/entities/Payement.java:35:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:38:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:41:	Avoid excessively long variable names like idCompteBeneficiaire
+src/metier/entities/Payement.java:41:	Parameter 'idCompteBeneficiaire' is not assigned and could be declared final
+src/metier/entities/Payement.java:41:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:44:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:47:	Parameter 'type' is not assigned and could be declared final
+src/metier/entities/Payement.java:47:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:50:	Avoid excessively long variable names like idCompteBeneficiaire
+src/metier/entities/Payement.java:50:	Parameter 'datePayement' is not assigned and could be declared final
+src/metier/entities/Payement.java:50:	Parameter 'idCompteBeneficiaire' is not assigned and could be declared final
+src/metier/entities/Payement.java:50:	Parameter 'idComptePayeur' is not assigned and could be declared final
+src/metier/entities/Payement.java:50:	Parameter 'montant' is not assigned and could be declared final
+src/metier/entities/Payement.java:50:	Parameter 'type' is not assigned and could be declared final
+src/metier/entities/Payement.java:50:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:58:	publicMethodCommentRequirement Required
+src/metier/entities/Payement.java:63:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:5:	Classes implementing Serializable should set a serialVersionUID
+src/metier/entities/Utilisateur.java:5:	headerCommentRequirement Required
+src/metier/entities/Utilisateur.java:7:	Avoid variables with short names like id
+src/metier/entities/Utilisateur.java:7:	fieldCommentRequirement Required
+src/metier/entities/Utilisateur.java:8:	fieldCommentRequirement Required
+src/metier/entities/Utilisateur.java:9:	fieldCommentRequirement Required
+src/metier/entities/Utilisateur.java:10:	fieldCommentRequirement Required
+src/metier/entities/Utilisateur.java:11:	fieldCommentRequirement Required
+src/metier/entities/Utilisateur.java:12:	fieldCommentRequirement Required
+src/metier/entities/Utilisateur.java:13:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:16:	Avoid variables with short names like id
+src/metier/entities/Utilisateur.java:16:	Parameter 'id' is not assigned and could be declared final
+src/metier/entities/Utilisateur.java:16:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:19:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:22:	Parameter 'profil' is not assigned and could be declared final
+src/metier/entities/Utilisateur.java:22:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:25:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:28:	Parameter 'login' is not assigned and could be declared final
+src/metier/entities/Utilisateur.java:28:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:31:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:34:	Parameter 'password' is not assigned and could be declared final
+src/metier/entities/Utilisateur.java:34:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:37:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:40:	Parameter 'status' is not assigned and could be declared final
+src/metier/entities/Utilisateur.java:40:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:45:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:48:	Parameter 'email' is not assigned and could be declared final
+src/metier/entities/Utilisateur.java:48:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:51:	Parameter 'email' is not assigned and could be declared final
+src/metier/entities/Utilisateur.java:51:	Parameter 'login' is not assigned and could be declared final
+src/metier/entities/Utilisateur.java:51:	Parameter 'password' is not assigned and could be declared final
+src/metier/entities/Utilisateur.java:51:	Parameter 'profil' is not assigned and could be declared final
+src/metier/entities/Utilisateur.java:51:	Parameter 'status' is not assigned and could be declared final
+src/metier/entities/Utilisateur.java:51:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:59:	publicMethodCommentRequirement Required
+src/metier/entities/Utilisateur.java:64:	publicMethodCommentRequirement Required
+src/web/ClientModele.java:8:	Each class should declare at least one constructor
+src/web/ClientModele.java:8:	headerCommentRequirement Required
+src/web/ClientModele.java:10:	fieldCommentRequirement Required
+src/web/ClientModele.java:11:	Avoid excessively long variable names like listeClientRecherche
+src/web/ClientModele.java:11:	fieldCommentRequirement Required
+src/web/ClientModele.java:13:	publicMethodCommentRequirement Required
+src/web/ClientModele.java:17:	Parameter 'motCle' is not assigned and could be declared final
+src/web/ClientModele.java:17:	publicMethodCommentRequirement Required
+src/web/ClientModele.java:21:	publicMethodCommentRequirement Required
+src/web/ClientModele.java:25:	Avoid excessively long variable names like listeClientRecherche
+src/web/ClientModele.java:25:	Parameter 'listeClientRecherche' is not assigned and could be declared final
+src/web/ClientModele.java:25:	publicMethodCommentRequirement Required
+src/web/CompteModele.java:8:	Each class should declare at least one constructor
+src/web/CompteModele.java:8:	headerCommentRequirement Required
+src/web/CompteModele.java:10:	fieldCommentRequirement Required
+src/web/CompteModele.java:11:	fieldCommentRequirement Required
+src/web/CompteModele.java:12:	Avoid excessively long variable names like listeCompteRecherche
+src/web/CompteModele.java:12:	fieldCommentRequirement Required
+src/web/CompteModele.java:13:	fieldCommentRequirement Required
+src/web/CompteModele.java:18:	publicMethodCommentRequirement Required
+src/web/CompteModele.java:21:	Parameter 'compte' is not assigned and could be declared final
+src/web/CompteModele.java:21:	publicMethodCommentRequirement Required
+src/web/CompteModele.java:24:	publicMethodCommentRequirement Required
+src/web/CompteModele.java:27:	Parameter 'idClient' is not assigned and could be declared final
+src/web/CompteModele.java:27:	publicMethodCommentRequirement Required
+src/web/CompteModele.java:30:	publicMethodCommentRequirement Required
+src/web/CompteModele.java:33:	Parameter 'motCle' is not assigned and could be declared final
+src/web/CompteModele.java:33:	publicMethodCommentRequirement Required
+src/web/CompteModele.java:36:	publicMethodCommentRequirement Required
+src/web/CompteModele.java:39:	Avoid excessively long variable names like listeCompteRecherche
+src/web/CompteModele.java:39:	Parameter 'listeCompteRecherche' is not assigned and could be declared final
+src/web/CompteModele.java:39:	publicMethodCommentRequirement Required
+src/web/ControleurServlet.java:1:	Possible God class (WMC=53, ATFD=183, TCC=0.0)
+src/web/ControleurServlet.java:7:	Avoid unused imports such as 'java.sql.SQLException'
+src/web/ControleurServlet.java:41:	Each class should declare at least one constructor
+src/web/ControleurServlet.java:41:	The class 'ControleurServlet' has a Cyclomatic Complexity of 18 (Highest = 51).
+src/web/ControleurServlet.java:41:	The class 'ControleurServlet' has a Modified Cyclomatic Complexity of 14 (Highest = 39).
+src/web/ControleurServlet.java:41:	The class 'ControleurServlet' has a Standard Cyclomatic Complexity of 14 (Highest = 39).
+src/web/ControleurServlet.java:41:	headerCommentRequirement Required
+src/web/ControleurServlet.java:43:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/web/ControleurServlet.java:43:	fieldCommentRequirement Required
+src/web/ControleurServlet.java:44:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/web/ControleurServlet.java:44:	fieldCommentRequirement Required
+src/web/ControleurServlet.java:45:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/web/ControleurServlet.java:45:	fieldCommentRequirement Required
+src/web/ControleurServlet.java:46:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/web/ControleurServlet.java:46:	fieldCommentRequirement Required
+src/web/ControleurServlet.java:49:	publicMethodCommentRequirement Required
+src/web/ControleurServlet.java:51:	Comment is too large: Line too long
+src/web/ControleurServlet.java:60:	Avoid really long methods.
+src/web/ControleurServlet.java:60:	Parameter 'request' is not assigned and could be declared final
+src/web/ControleurServlet.java:60:	Parameter 'response' is not assigned and could be declared final
+src/web/ControleurServlet.java:60:	The method 'doGet' has a Cyclomatic Complexity of 51.
+src/web/ControleurServlet.java:60:	The method 'doGet' has a Modified Cyclomatic Complexity of 39.
+src/web/ControleurServlet.java:60:	The method 'doGet' has a Standard Cyclomatic Complexity of 39.
+src/web/ControleurServlet.java:60:	The method doGet() has an NCSS line count of 335
+src/web/ControleurServlet.java:60:	protectedMethodCommentRequirement Required
+src/web/ControleurServlet.java:63:	Local variable 'path' could be declared final
+src/web/ControleurServlet.java:66:	Position literals first in String comparisons
+src/web/ControleurServlet.java:66:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:67:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:70:	Position literals first in String comparisons
+src/web/ControleurServlet.java:70:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:71:	Local variable 'motCle' could be declared final
+src/web/ControleurServlet.java:71:	The String literal "motCle" appears 5 times in this file; the first occurrence is on line 71
+src/web/ControleurServlet.java:72:	Local variable 'modeleCpte' could be declared final
+src/web/ControleurServlet.java:74:	Avoid excessively long variable names like listeCompteRecherche
+src/web/ControleurServlet.java:74:	Local variable 'listeCompteRecherche' could be declared final
+src/web/ControleurServlet.java:80:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:83:	Position literals first in String comparisons
+src/web/ControleurServlet.java:83:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:84:	Local variable 'idClient' could be declared final
+src/web/ControleurServlet.java:85:	Local variable 'compte' could be declared final
+src/web/ControleurServlet.java:89:	Local variable 'numberFormat' could be declared final
+src/web/ControleurServlet.java:90:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:90:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:90:	The String literal "soldeString" appears 5 times in this file; the first occurrence is on line 90
+src/web/ControleurServlet.java:91:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:94:	Position literals first in String comparisons
+src/web/ControleurServlet.java:94:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:95:	Local variable 'idClient' could be declared final
+src/web/ControleurServlet.java:95:	The String literal "idClient" appears 6 times in this file; the first occurrence is on line 95
+src/web/ControleurServlet.java:96:	Local variable 'modeleCpte' could be declared final
+src/web/ControleurServlet.java:98:	Local variable 'compte' could be declared final
+src/web/ControleurServlet.java:101:	The String literal "compte" appears 9 times in this file; the first occurrence is on line 101
+src/web/ControleurServlet.java:102:	Local variable 'numberFormat' could be declared final
+src/web/ControleurServlet.java:103:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:103:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:104:	The String literal "date" appears 7 times in this file; the first occurrence is on line 104
+src/web/ControleurServlet.java:105:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:108:	Position literals first in String comparisons
+src/web/ControleurServlet.java:108:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:109:	Local variable 'idClient' could be declared final
+src/web/ControleurServlet.java:110:	Local variable 'modeleCpte' could be declared final
+src/web/ControleurServlet.java:112:	Local variable 'compte' could be declared final
+src/web/ControleurServlet.java:116:	Local variable 'numberFormat' could be declared final
+src/web/ControleurServlet.java:117:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:117:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:119:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:123:	Position literals first in String comparisons
+src/web/ControleurServlet.java:123:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:125:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:128:	Position literals first in String comparisons
+src/web/ControleurServlet.java:128:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:128:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:128:	The String literal "POST" appears 8 times in this file; the first occurrence is on line 128
+src/web/ControleurServlet.java:129:	Local variable 'type' could be declared final
+src/web/ControleurServlet.java:129:	The String literal "type" appears 5 times in this file; the first occurrence is on line 129
+src/web/ControleurServlet.java:130:	Local variable 'date' could be declared final
+src/web/ControleurServlet.java:131:	Local variable 'idClient' could be declared final
+src/web/ControleurServlet.java:132:	Local variable 'idGestionnaire' could be declared final
+src/web/ControleurServlet.java:133:	Local variable 'solde' could be declared final
+src/web/ControleurServlet.java:135:	Local variable 'cpte' could be declared final
+src/web/ControleurServlet.java:138:	Local variable 'numberFormat' could be declared final
+src/web/ControleurServlet.java:139:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:139:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:140:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:144:	Position literals first in String comparisons
+src/web/ControleurServlet.java:144:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:148:	Avoid variables with short names like id
+src/web/ControleurServlet.java:148:	Local variable 'id' could be declared final
+src/web/ControleurServlet.java:155:	Position literals first in String comparisons
+src/web/ControleurServlet.java:155:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:157:	Avoid variables with short names like id
+src/web/ControleurServlet.java:157:	Local variable 'id' could be declared final
+src/web/ControleurServlet.java:158:	Local variable 'cpte' could be declared final
+src/web/ControleurServlet.java:160:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:166:	Position literals first in String comparisons
+src/web/ControleurServlet.java:166:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:166:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:167:	Avoid variables with short names like id
+src/web/ControleurServlet.java:167:	Local variable 'id' could be declared final
+src/web/ControleurServlet.java:168:	Local variable 'type' could be declared final
+src/web/ControleurServlet.java:169:	Local variable 'date' could be declared final
+src/web/ControleurServlet.java:170:	Local variable 'idClient' could be declared final
+src/web/ControleurServlet.java:171:	Local variable 'idGestionnaire' could be declared final
+src/web/ControleurServlet.java:172:	Local variable 'solde' could be declared final
+src/web/ControleurServlet.java:176:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:180:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:184:	Position literals first in String comparisons
+src/web/ControleurServlet.java:184:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:186:	Avoid variables with short names like id
+src/web/ControleurServlet.java:186:	Local variable 'id' could be declared final
+src/web/ControleurServlet.java:187:	Local variable 'cpte' could be declared final
+src/web/ControleurServlet.java:190:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:196:	Position literals first in String comparisons
+src/web/ControleurServlet.java:196:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:196:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:199:	Avoid variables with short names like id
+src/web/ControleurServlet.java:199:	Local variable 'id' could be declared final
+src/web/ControleurServlet.java:201:	Local variable 'montant' could be declared final
+src/web/ControleurServlet.java:205:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:207:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:209:	Local variable 'numberFormat' could be declared final
+src/web/ControleurServlet.java:212:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:212:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:213:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:217:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:222:	Position literals first in String comparisons
+src/web/ControleurServlet.java:222:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:224:	Avoid variables with short names like id
+src/web/ControleurServlet.java:224:	Local variable 'id' could be declared final
+src/web/ControleurServlet.java:225:	Local variable 'cpte' could be declared final
+src/web/ControleurServlet.java:228:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:234:	Position literals first in String comparisons
+src/web/ControleurServlet.java:234:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:234:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:236:	Local variable 'date' could be declared final
+src/web/ControleurServlet.java:238:	Local variable 'idCptePayeur' could be declared final
+src/web/ControleurServlet.java:240:	Local variable 'idCpteBenef' could be declared final
+src/web/ControleurServlet.java:242:	Local variable 'montant' could be declared final
+src/web/ControleurServlet.java:244:	Local variable 'type' could be declared final
+src/web/ControleurServlet.java:248:	Local variable 'cpteBenef' could be declared final
+src/web/ControleurServlet.java:254:	Found 'DD'-anomaly for variable 'payement' (lines '254'-'256').
+src/web/ControleurServlet.java:256:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:256:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:259:	Avoid if (x != y) ..; else ..;
+src/web/ControleurServlet.java:259:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:261:	Local variable 'numberFormat' could be declared final
+src/web/ControleurServlet.java:263:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:266:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:266:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:267:	Comment is too large: Line too long
+src/web/ControleurServlet.java:270:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:270:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:272:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:276:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:279:	Avoid using if...else statements without curly braces
+src/web/ControleurServlet.java:279:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:287:	Position literals first in String comparisons
+src/web/ControleurServlet.java:287:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:288:	Local variable 'motCle' could be declared final
+src/web/ControleurServlet.java:289:	Local variable 'modeleClient' could be declared final
+src/web/ControleurServlet.java:291:	Avoid excessively long variable names like listeClientRecherche
+src/web/ControleurServlet.java:291:	Local variable 'listeClientRecherche' could be declared final
+src/web/ControleurServlet.java:295:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:299:	Position literals first in String comparisons
+src/web/ControleurServlet.java:299:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:300:	Local variable 'idClient' could be declared final
+src/web/ControleurServlet.java:301:	Local variable 'client' could be declared final
+src/web/ControleurServlet.java:302:	The String literal "client" appears 5 times in this file; the first occurrence is on line 302
+src/web/ControleurServlet.java:303:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:306:	Position literals first in String comparisons
+src/web/ControleurServlet.java:306:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:308:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:311:	Position literals first in String comparisons
+src/web/ControleurServlet.java:311:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:311:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:312:	Local variable 'civilite' could be declared final
+src/web/ControleurServlet.java:313:	Local variable 'nom' could be declared final
+src/web/ControleurServlet.java:314:	Local variable 'prenom' could be declared final
+src/web/ControleurServlet.java:315:	Local variable 'dateNaissance' could be declared final
+src/web/ControleurServlet.java:316:	Local variable 'lieuNaissance' could be declared final
+src/web/ControleurServlet.java:317:	Local variable 'sexe' could be declared final
+src/web/ControleurServlet.java:318:	Local variable 'type' could be declared final
+src/web/ControleurServlet.java:319:	Local variable 'pieceIdentite' could be declared final
+src/web/ControleurServlet.java:320:	Local variable 'refPieceIdentite' could be declared final
+src/web/ControleurServlet.java:321:	Local variable 'adresse' could be declared final
+src/web/ControleurServlet.java:322:	Local variable 'telephone' could be declared final
+src/web/ControleurServlet.java:323:	Local variable 'email' could be declared final
+src/web/ControleurServlet.java:323:	The String literal "email" appears 4 times in this file; the first occurrence is on line 323
+src/web/ControleurServlet.java:325:	Local variable 'client' could be declared final
+src/web/ControleurServlet.java:328:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:332:	Position literals first in String comparisons
+src/web/ControleurServlet.java:332:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:334:	Avoid variables with short names like id
+src/web/ControleurServlet.java:334:	Local variable 'id' could be declared final
+src/web/ControleurServlet.java:335:	Local variable 'client' could be declared final
+src/web/ControleurServlet.java:337:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:343:	Position literals first in String comparisons
+src/web/ControleurServlet.java:343:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:343:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:345:	Avoid variables with short names like id
+src/web/ControleurServlet.java:345:	Local variable 'id' could be declared final
+src/web/ControleurServlet.java:346:	Local variable 'civilite' could be declared final
+src/web/ControleurServlet.java:347:	Local variable 'nom' could be declared final
+src/web/ControleurServlet.java:348:	Local variable 'prenom' could be declared final
+src/web/ControleurServlet.java:349:	Local variable 'dateNaissance' could be declared final
+src/web/ControleurServlet.java:350:	Local variable 'lieuNaissance' could be declared final
+src/web/ControleurServlet.java:351:	Local variable 'sexe' could be declared final
+src/web/ControleurServlet.java:352:	Local variable 'type' could be declared final
+src/web/ControleurServlet.java:353:	Local variable 'pieceIdentite' could be declared final
+src/web/ControleurServlet.java:354:	Local variable 'refPieceIdentite' could be declared final
+src/web/ControleurServlet.java:355:	Local variable 'adresse' could be declared final
+src/web/ControleurServlet.java:356:	Local variable 'telephone' could be declared final
+src/web/ControleurServlet.java:357:	Local variable 'email' could be declared final
+src/web/ControleurServlet.java:367:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:371:	Position literals first in String comparisons
+src/web/ControleurServlet.java:371:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:372:	Comment is too large: Line too long
+src/web/ControleurServlet.java:374:	Avoid variables with short names like id
+src/web/ControleurServlet.java:374:	Local variable 'id' could be declared final
+src/web/ControleurServlet.java:384:	Position literals first in String comparisons
+src/web/ControleurServlet.java:384:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:385:	Local variable 'motCle' could be declared final
+src/web/ControleurServlet.java:386:	Local variable 'modeleUser' could be declared final
+src/web/ControleurServlet.java:388:	Avoid excessively long variable names like listeUserRecherche
+src/web/ControleurServlet.java:388:	Local variable 'listeUserRecherche' could be declared final
+src/web/ControleurServlet.java:392:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:395:	Position literals first in String comparisons
+src/web/ControleurServlet.java:395:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:396:	The String literal "user" appears 4 times in this file; the first occurrence is on line 396
+src/web/ControleurServlet.java:397:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:400:	Position literals first in String comparisons
+src/web/ControleurServlet.java:400:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:400:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:401:	Local variable 'profil' could be declared final
+src/web/ControleurServlet.java:402:	Local variable 'login' could be declared final
+src/web/ControleurServlet.java:403:	Local variable 'password' could be declared final
+src/web/ControleurServlet.java:404:	Local variable 'email' could be declared final
+src/web/ControleurServlet.java:406:	Local variable 'statusString' could be declared final
+src/web/ControleurServlet.java:408:	Found 'DD'-anomaly for variable 'status' (lines '408'-'411').
+src/web/ControleurServlet.java:408:	Found 'DD'-anomaly for variable 'status' (lines '408'-'415').
+src/web/ControleurServlet.java:410:	Position literals first in String comparisons
+src/web/ControleurServlet.java:410:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:420:	Local variable 'user' could be declared final
+src/web/ControleurServlet.java:422:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:426:	Position literals first in String comparisons
+src/web/ControleurServlet.java:426:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:428:	Avoid variables with short names like id
+src/web/ControleurServlet.java:428:	Local variable 'id' could be declared final
+src/web/ControleurServlet.java:429:	Local variable 'user' could be declared final
+src/web/ControleurServlet.java:431:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:434:	Position literals first in String comparisons
+src/web/ControleurServlet.java:434:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:434:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:436:	Avoid variables with short names like id
+src/web/ControleurServlet.java:436:	Local variable 'id' could be declared final
+src/web/ControleurServlet.java:437:	Local variable 'profil' could be declared final
+src/web/ControleurServlet.java:438:	Local variable 'login' could be declared final
+src/web/ControleurServlet.java:439:	Local variable 'password' could be declared final
+src/web/ControleurServlet.java:440:	Local variable 'email' could be declared final
+src/web/ControleurServlet.java:441:	Local variable 'status' could be declared final
+src/web/ControleurServlet.java:450:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:454:	Position literals first in String comparisons
+src/web/ControleurServlet.java:454:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:455:	Comment is too large: Line too long
+src/web/ControleurServlet.java:457:	Avoid variables with short names like id
+src/web/ControleurServlet.java:457:	Local variable 'id' could be declared final
+src/web/ControleurServlet.java:469:	Position literals first in String comparisons
+src/web/ControleurServlet.java:469:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:470:	Local variable 'idCompte' could be declared final
+src/web/ControleurServlet.java:471:	Local variable 'motCle' could be declared final
+src/web/ControleurServlet.java:472:	Local variable 'modelePayement' could be declared final
+src/web/ControleurServlet.java:474:	Avoid excessively long variable names like listePayementRecherche
+src/web/ControleurServlet.java:474:	Local variable 'listePayementRecherche' could be declared final
+src/web/ControleurServlet.java:478:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:482:	Position literals first in String comparisons
+src/web/ControleurServlet.java:482:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:483:	Local variable 'idCompte' could be declared final
+src/web/ControleurServlet.java:484:	Local variable 'motCle' could be declared final
+src/web/ControleurServlet.java:485:	Local variable 'modelePayement' could be declared final
+src/web/ControleurServlet.java:487:	Avoid excessively long variable names like listePayementRecherche
+src/web/ControleurServlet.java:487:	Local variable 'listePayementRecherche' could be declared final
+src/web/ControleurServlet.java:491:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:498:	Position literals first in String comparisons
+src/web/ControleurServlet.java:498:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:501:	Local variable 'loginUser' could be declared final
+src/web/ControleurServlet.java:502:	Local variable 'passwordUser' could be declared final
+src/web/ControleurServlet.java:504:	Found 'DD'-anomaly for variable 'login' (lines '504'-'525').
+src/web/ControleurServlet.java:504:	Found 'DU'-anomaly for variable 'login' (lines '504'-'607').
+src/web/ControleurServlet.java:505:	Avoid unused local variables such as 'password'.
+src/web/ControleurServlet.java:505:	Found 'DD'-anomaly for variable 'password' (lines '505'-'526').
+src/web/ControleurServlet.java:505:	Found 'DU'-anomaly for variable 'password' (lines '505'-'607').
+src/web/ControleurServlet.java:506:	Found 'DD'-anomaly for variable 'profil' (lines '506'-'524').
+src/web/ControleurServlet.java:507:	Found 'DD'-anomaly for variable 'status' (lines '507'-'527').
+src/web/ControleurServlet.java:508:	Avoid variables with short names like id
+src/web/ControleurServlet.java:508:	Found 'DD'-anomaly for variable 'id' (lines '508'-'528').
+src/web/ControleurServlet.java:508:	Found 'DU'-anomaly for variable 'id' (lines '508'-'607').
+src/web/ControleurServlet.java:511:	Ensure that resources like this Connection object are closed after use
+src/web/ControleurServlet.java:511:	Found 'DD'-anomaly for variable 'connexion' (lines '511'-'517').
+src/web/ControleurServlet.java:512:	Avoid variables with short names like ps
+src/web/ControleurServlet.java:512:	Found 'DD'-anomaly for variable 'ps' (lines '512'-'518').
+src/web/ControleurServlet.java:513:	Avoid variables with short names like rs
+src/web/ControleurServlet.java:513:	Ensure that resources like this ResultSet object are closed after use
+src/web/ControleurServlet.java:513:	Found 'DD'-anomaly for variable 'rs' (lines '513'-'521').
+src/web/ControleurServlet.java:518:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:519:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:520:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:521:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:522:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:524:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:525:	Found 'DU'-anomaly for variable 'login' (lines '525'-'607').
+src/web/ControleurServlet.java:525:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:526:	Found 'DU'-anomaly for variable 'password' (lines '526'-'607').
+src/web/ControleurServlet.java:526:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:527:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:528:	Found 'DU'-anomaly for variable 'id' (lines '528'-'607').
+src/web/ControleurServlet.java:528:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:532:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:535:	Position literals first in String comparisons
+src/web/ControleurServlet.java:535:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:538:	Local variable 'sessionactivekey' could be declared final
+src/web/ControleurServlet.java:538:	The String literal "GH@45#" appears 4 times in this file; the first occurrence is on line 538
+src/web/ControleurServlet.java:539:	Local variable 'session' could be declared final
+src/web/ControleurServlet.java:540:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:540:	The String literal "skey" appears 4 times in this file; the first occurrence is on line 540
+src/web/ControleurServlet.java:541:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:541:	The String literal "sLogin" appears 4 times in this file; the first occurrence is on line 541
+src/web/ControleurServlet.java:542:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:542:	The String literal "sId" appears 4 times in this file; the first occurrence is on line 542
+src/web/ControleurServlet.java:548:	Position literals first in String comparisons
+src/web/ControleurServlet.java:548:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:551:	Local variable 'sessionactivekey' could be declared final
+src/web/ControleurServlet.java:552:	Local variable 'session' could be declared final
+src/web/ControleurServlet.java:553:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:554:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:555:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:561:	Position literals first in String comparisons
+src/web/ControleurServlet.java:561:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:564:	Local variable 'sessionactivekey' could be declared final
+src/web/ControleurServlet.java:565:	Local variable 'session' could be declared final
+src/web/ControleurServlet.java:566:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:567:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:568:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:574:	Position literals first in String comparisons
+src/web/ControleurServlet.java:574:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:577:	Local variable 'sessionactivekey' could be declared final
+src/web/ControleurServlet.java:578:	Local variable 'session' could be declared final
+src/web/ControleurServlet.java:579:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:580:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:581:	Potential violation of Law of Demeter (object not created locally)
+src/web/ControleurServlet.java:588:	Potential violation of Law of Demeter (method chain calls)
+src/web/ControleurServlet.java:593:	Avoid catching generic exceptions such as NullPointerException, RuntimeException, Exception in try-catch block
+src/web/ControleurServlet.java:594:	Avoid printStackTrace(); use a logger call instead.
+src/web/ControleurServlet.java:610:	Parameter 'request' is not assigned and could be declared final
+src/web/ControleurServlet.java:610:	Parameter 'response' is not assigned and could be declared final
+src/web/ControleurServlet.java:610:	protectedMethodCommentRequirement Required
+src/web/OperationsModele.java:8:	Each class should declare at least one constructor
+src/web/OperationsModele.java:8:	headerCommentRequirement Required
+src/web/OperationsModele.java:10:	fieldCommentRequirement Required
+src/web/OperationsModele.java:11:	fieldCommentRequirement Required
+src/web/OperationsModele.java:12:	Avoid excessively long variable names like listeCompteRecherche
+src/web/OperationsModele.java:12:	fieldCommentRequirement Required
+src/web/OperationsModele.java:13:	fieldCommentRequirement Required
+src/web/OperationsModele.java:18:	publicMethodCommentRequirement Required
+src/web/OperationsModele.java:21:	Parameter 'compte' is not assigned and could be declared final
+src/web/OperationsModele.java:21:	publicMethodCommentRequirement Required
+src/web/OperationsModele.java:24:	publicMethodCommentRequirement Required
+src/web/OperationsModele.java:27:	Parameter 'idClient' is not assigned and could be declared final
+src/web/OperationsModele.java:27:	publicMethodCommentRequirement Required
+src/web/OperationsModele.java:30:	publicMethodCommentRequirement Required
+src/web/OperationsModele.java:33:	Parameter 'motCle' is not assigned and could be declared final
+src/web/OperationsModele.java:33:	publicMethodCommentRequirement Required
+src/web/OperationsModele.java:36:	publicMethodCommentRequirement Required
+src/web/OperationsModele.java:39:	Avoid excessively long variable names like listeCompteRecherche
+src/web/OperationsModele.java:39:	Parameter 'listeCompteRecherche' is not assigned and could be declared final
+src/web/OperationsModele.java:39:	publicMethodCommentRequirement Required
+src/web/PayementModele.java:9:	Each class should declare at least one constructor
+src/web/PayementModele.java:9:	headerCommentRequirement Required
+src/web/PayementModele.java:11:	fieldCommentRequirement Required
+src/web/PayementModele.java:12:	fieldCommentRequirement Required
+src/web/PayementModele.java:13:	fieldCommentRequirement Required
+src/web/PayementModele.java:16:	publicMethodCommentRequirement Required
+src/web/PayementModele.java:19:	Parameter 'idCompte' is not assigned and could be declared final
+src/web/PayementModele.java:19:	publicMethodCommentRequirement Required
+src/web/PayementModele.java:22:	Avoid excessively long variable names like listePayementRecherche
+src/web/PayementModele.java:22:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/web/PayementModele.java:22:	fieldCommentRequirement Required
+src/web/PayementModele.java:23:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/web/PayementModele.java:23:	fieldCommentRequirement Required
+src/web/PayementModele.java:26:	publicMethodCommentRequirement Required
+src/web/PayementModele.java:29:	Parameter 'motCle' is not assigned and could be declared final
+src/web/PayementModele.java:29:	publicMethodCommentRequirement Required
+src/web/PayementModele.java:32:	publicMethodCommentRequirement Required
+src/web/PayementModele.java:35:	Parameter 'idPayement' is not assigned and could be declared final
+src/web/PayementModele.java:35:	publicMethodCommentRequirement Required
+src/web/PayementModele.java:38:	publicMethodCommentRequirement Required
+src/web/PayementModele.java:41:	Avoid excessively long variable names like listePayementRecherche
+src/web/PayementModele.java:41:	Parameter 'listePayementRecherche' is not assigned and could be declared final
+src/web/PayementModele.java:41:	publicMethodCommentRequirement Required
+src/web/PayementModele.java:44:	publicMethodCommentRequirement Required
+src/web/PayementModele.java:47:	Parameter 'payement' is not assigned and could be declared final
+src/web/PayementModele.java:47:	publicMethodCommentRequirement Required
+src/web/UtilisateurModele.java:8:	Each class should declare at least one constructor
+src/web/UtilisateurModele.java:8:	headerCommentRequirement Required
+src/web/UtilisateurModele.java:9:	fieldCommentRequirement Required
+src/web/UtilisateurModele.java:10:	Avoid excessively long variable names like listeUtilisateurRecherche
+src/web/UtilisateurModele.java:10:	fieldCommentRequirement Required
+src/web/UtilisateurModele.java:13:	publicMethodCommentRequirement Required
+src/web/UtilisateurModele.java:16:	Parameter 'motCle' is not assigned and could be declared final
+src/web/UtilisateurModele.java:16:	publicMethodCommentRequirement Required
+src/web/UtilisateurModele.java:19:	publicMethodCommentRequirement Required
+src/web/UtilisateurModele.java:22:	Avoid excessively long variable names like listeUtilisateurRecherche
+src/web/UtilisateurModele.java:22:	Parameter 'listeUtilisateurRecherche' is not assigned and could be declared final
+src/web/UtilisateurModele.java:22:	publicMethodCommentRequirement Required
